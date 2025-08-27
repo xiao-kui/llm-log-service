@@ -9,9 +9,11 @@ from tinydb import TinyDB, Query
 app = FastAPI()
 
 @app.post("/api/v1/log/store/chat_message")
-async def handle_store_chat_message(request: ChatMessageStore):
+async def handle_store_chat_message(request: Request):
     try:
-        chat_message_tinydb.insert(request.model_dump())
+        body = await request.json()
+        chat_message_store = ChatMessageStore(**body)
+        chat_message_tinydb.insert(chat_message_store.model_dump())
     except Exception as e:
         logger.error(f"request error: {e}")
 
@@ -22,13 +24,13 @@ def handle_search_chat_message(request: ChatMessageFilter):
         db = chat_message_tinydb
         for ele in request.operator:
             if ele == "id":
-                results = db.query_by_id(request.uuid)
+                results = db.search_by_id(request.uuid)
             if ele == "time":
-                results = db.query_by_time(request.start_time, request.end_time)
+                results = db.search_by_time(request.start_time, request.end_time)
             if ele == "latest_n":
-                results = db.query_latest_n(request.latest_n)
+                results = db.search_latest_n(request.latest_n)
             if ele == "content":
-                results = db.query_by_content(request.content)
+                results = db.search_by_content(request.content)
             db = ChatMessageTinyDb().init_from_list(results)
 
         return results

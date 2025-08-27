@@ -3,6 +3,7 @@ from tinydb import TinyDB, Query
 from datetime import datetime
 import re
 from typing import Optional
+from backend.schemas.chat_message import LatestN
 
 from tinydb.queries import QueryLike
 from tinydb.storages import MemoryStorage
@@ -35,20 +36,20 @@ class ChatMessageTinyDb:
         msg["time"] = datetime.now().timestamp()
         self.db.insert(msg)
 
-    def query_by_time(self, start_time: datetime, end_time: datetime) -> list[dict]:
+    def search_by_time(self, start_time: datetime, end_time: datetime) -> list[dict]:
         """按时间区间查询消息"""
         start_ts = start_time.timestamp()
         end_ts = end_time.timestamp()
         return self.db.search((where("time") >= start_ts) & (where("time") <= end_ts))
 
-    def query_by_uuid(self, uuid: str) -> list[dict]:
+    def search_by_uuid(self, uuid: str) -> list[dict]:
         """根据 uuid 查询消息"""
         return self.db.search(where("uuid") == uuid) # type: ignore
 
-    def query_latest_n(self, n: int) -> list[dict]:
+    def search_latest_n(self, latest_n: LatestN) -> list[dict]:
         all_msgs = self.db.all()
         all_msgs.sort(key=lambda x: x.get("time", 0), reverse=True)
-        return all_msgs[:n]
+        return all_msgs[:latest_n.count]
 
     def search_by_content(self, content: str) -> list[dict]:
         results = []

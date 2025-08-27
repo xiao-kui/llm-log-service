@@ -61,13 +61,13 @@ def render_sidebar_id_query():
         message_id = st.text_input("Enter Message ID", key="id_input")
         if st.button("Search", key="query_id"):
             if message_id:
-                st.session_state["query_result"] = fetch_message_by_id(message_id)
+                st.session_state["query_result"] = fetch_message_by_uuid(message_id)
             else:
                 st.session_state["query_result"] = {"error": "Message ID is required"}
 
 
 def render_sidebar_latest_query():
-    with st.sidebar.expander("🆕 Search Latest N", expanded=False):
+    with st.sidebar.expander("🆕 Search By Latest N", expanded=False):
         unit = st.selectbox("unit",["minutes", "hours", "days"], index=2)
         count = st.number_input("Number of messages", min_value=1, max_value=1000, value=5, step=1, key="latest_n")
         if st.button("Search", key="query_latest_n"):
@@ -75,8 +75,8 @@ def render_sidebar_latest_query():
             msgs = fetch_message_by_latest_n(latest_n)
             st.session_state["query_result"] = msgs if msgs else [{"info": "No messages found"}]
 
-def render_sidebar_keywords_query():
-    with st.sidebar.expander("🆕 Search By Keywords", expanded=False):
+def render_sidebar_content_query():
+    with st.sidebar.expander("🆕 Search By Content", expanded=False):
         count = st.text_input("content", key="content")
         if st.button("Search", key="query_by_content"):
             msgs = fetch_messages_by_content(count)
@@ -87,12 +87,12 @@ def render_query_results():
         st.json(st.session_state["query_result"])
 
 def main():
-    st.title("📑 eLLM Message Viewer")
+    st.title("📑 Chat Message Viewer")
 
     render_sidebar_time_query()
     render_sidebar_id_query()
     render_sidebar_latest_query()
-    render_sidebar_keywords_query()
+    render_sidebar_content_query()
     render_query_results()
 
 
