@@ -9,9 +9,9 @@ class ChatMessageStore(BaseModel):
     uuid: str = None
     group_id: str = None
     finish_reason: str = None
-    time_to_first_token:int = None
-    time_to_last_token:int = None
-    time_per_output_token:int = None
+    time_to_first_token:str = None
+    time_to_last_token:str = None
+    time_per_output_token:str = None
     token_count: int = 0
     messages: list = Field(default_factory=list)
 
