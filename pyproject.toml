@@ -1,0 +1,13 @@
+[project]
+name = "llm-log-service"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi>=0.116.1",
+    "httpx>=0.28.1",
+    "loguru>=0.7.3",
+    "streamlit>=1.49.0",
+    "tinydb>=4.8.2",
+    "uvicorn>=0.35.0",
+]
