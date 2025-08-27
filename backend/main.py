@@ -4,7 +4,7 @@ from loguru import logger
 
 def main():
     logger.info("initializing!\n\n")
-    uvicorn.run(app, host="0.0.0.0", port=9012)
+    uvicorn.run(app, host="0.0.0.0", port=9015)
 
 
 if __name__ == "__main__":
