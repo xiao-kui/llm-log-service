@@ -10,20 +10,31 @@ class ChatMessageStore(BaseModel):
     group_id: str = None
     finish_reason: str = None
     time_to_first_token:str = None
-    time_to_last_token:str = None
+    tokens_per_second:str = None
     time_per_output_token:str = None
     token_count: int = 0
     messages: list = Field(default_factory=list)
 
 
-DateTimeUnit = Literal["minutes", "hours", "days", "weeks", "months", "years"]
+class TimeUnitType(str, Enum):
+    Minutes = "Minutes"
+    Hours = "Hours"
+    Days = "Days"
+    Weeks = "Weeks"
+    Months = "Months"
+    Years = "Years"
+
+class FilterType(str, Enum):
+    Uuid = "Uuid"
+    Time = "Time"
+    LatestN = "LatestN"
+    Content = "Content"
 
 class LatestN(BaseModel):
     count: int
-    unit: DateTimeUnit
 
 class ChatMessageFilter(BaseModel):
-    operator: list[Literal["uuid", "time", "latest_n", "content"]] = Field(default_factory=list)
+    operator: list[FilterType] = Field(default_factory=list)
     uuid: Optional[str] = None
     start_time: Optional[datetime]= None
     end_time: Optional[datetime]= None
