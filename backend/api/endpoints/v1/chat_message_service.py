@@ -2,7 +2,7 @@ from fastapi import APIRouter, Depends, HTTPException, Response, Request, FastAP
 from loguru import logger
 import json
 from datetime import datetime
-from backend.schemas.chat_message import ChatMessageStore, ChatMessageFilter
+from backend.schemas.chat_message import ChatMessageStore, ChatMessageFilter, FilterType
 from backend.database.chat_message_tinydb import chat_message_tinydb, ChatMessageTinyDb
 from tinydb import TinyDB, Query
 
@@ -23,13 +23,13 @@ def handle_search_chat_message(request: ChatMessageFilter):
         results = []
         db = chat_message_tinydb
         for ele in request.operator:
-            if ele == "id":
+            if ele == FilterType.Uuid:
                 results = db.search_by_id(request.uuid)
-            if ele == "time":
+            if ele == FilterType.Time:
                 results = db.search_by_time(request.start_time, request.end_time)
-            if ele == "latest_n":
+            if ele == FilterType.LatestN:
                 results = db.search_latest_n(request.latest_n)
-            if ele == "content":
+            if ele == FilterType.Content:
                 results = db.search_by_content(request.content)
             db = ChatMessageTinyDb().init_from_list(results)
 
