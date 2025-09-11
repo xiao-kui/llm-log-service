@@ -6,3 +6,4 @@ uv.lock
 .idea
 __pycache__
 .venv
+*egg-info

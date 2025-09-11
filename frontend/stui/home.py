@@ -9,8 +9,8 @@ from backend.schemas.chat_message import LatestN, FilterType
 API_BASE_URL = "http://127.0.0.1:9015/api/v1/log/search/chat_message"
 
 def fetch_messages_by_time(start: datetime, end: datetime) -> List[Dict]:
-    payload = ChatMessageFilter(operator=[FilterType.Time],start_time=start, end_time=end).model_dump()
-    resp = httpx.post(API_BASE_URL, json=payload)
+    payload = ChatMessageFilter(operator=[FilterType.Time],start_time=start, end_time=end).model_dump_json()
+    resp = httpx.post(API_BASE_URL, content=payload, headers={"Content-Type": "application/json"})
     resp.raise_for_status()
     return resp.json()
 

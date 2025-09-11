@@ -4,7 +4,7 @@ from datetime import datetime
 import re
 from typing import Optional
 from backend.schemas.chat_message import LatestN
-
+from pathlib import Path
 from tinydb.queries import QueryLike
 from tinydb.storages import MemoryStorage
 from tinydb import where
@@ -61,9 +61,11 @@ class ChatMessageTinyDb:
                 if msg.get("role") == "user" or msg.get("role") == "assistant":
                     if content in msg.get("content", ''):
                         results.append(item)
+                        break
+                if idx > 1:
                     break
-                if idx > 1: break
 
         return results
 
-chat_message_tinydb = ChatMessageTinyDb().init_from_path("resources/chat_messages.json")
+file_path = Path(__file__).parent.parent / "resources/chat_messages.json"
+chat_message_tinydb = ChatMessageTinyDb().init_from_path(str(file_path))
