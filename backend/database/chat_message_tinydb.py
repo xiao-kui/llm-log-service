@@ -1,6 +1,5 @@
 from streamlit.testing.v1.element_tree import ChatMessage
 from tinydb import TinyDB, Query
-from datetime import datetime
 import re
 from typing import Optional
 from backend.schemas.chat_message import LatestN
@@ -8,6 +7,7 @@ from pathlib import Path
 from tinydb.queries import QueryLike
 from tinydb.storages import MemoryStorage
 from tinydb import where
+from datetime import datetime, timezone
 
 class ChatMessageTinyDb:
     def __init__(self):
@@ -34,6 +34,7 @@ class ChatMessageTinyDb:
 
     def insert(self, msg: dict) -> None:
         msg["time"] = datetime.now().timestamp()
+        msg["time"] = datetime.now(timezone.utc).timestamp()
         self.db.insert(msg)
 
     def search_by_time(self, start_time: datetime, end_time: datetime) -> list[dict]:
