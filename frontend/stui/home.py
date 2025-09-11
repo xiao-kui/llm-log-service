@@ -4,31 +4,31 @@ import httpx
 from backend.schemas.chat_message import ChatMessageFilter
 
 from typing import List, Dict
-from backend.schemas.chat_message import LatestN, DateTimeUnit
+from backend.schemas.chat_message import LatestN, FilterType
 
 API_BASE_URL = "http://127.0.0.1:9015/api/v1/log/search/chat_message"
 
 def fetch_messages_by_time(start: datetime, end: datetime) -> List[Dict]:
-    payload = ChatMessageFilter(operator=["time"],start_time=start, end_time=end).model_dump()
+    payload = ChatMessageFilter(operator=[FilterType.Time],start_time=start, end_time=end).model_dump()
     resp = httpx.post(API_BASE_URL, json=payload)
     resp.raise_for_status()
     return resp.json()
 
 def fetch_message_by_uuid(uuid: str) -> Dict:
-    payload = ChatMessageFilter(operator=["uuid"], uuid=uuid).model_dump()
+    payload = ChatMessageFilter(operator=[FilterType.Uuid], uuid=uuid).model_dump()
     resp = httpx.post(API_BASE_URL, json=payload)
     resp.raise_for_status()
     return resp.json()
 
 
 def fetch_message_by_latest_n(latest_n: LatestN) -> Dict:
-    payload = ChatMessageFilter(operator=["latest_n"], latest_n=latest_n).model_dump()
+    payload = ChatMessageFilter(operator=[FilterType.LatestN], latest_n=latest_n).model_dump()
     resp = httpx.post(API_BASE_URL, json=payload)
     resp.raise_for_status()
     return resp.json()
 
 def fetch_messages_by_content(content: str) -> Dict:
-    payload = ChatMessageFilter(operator=["content"], content=content).model_dump()
+    payload = ChatMessageFilter(operator=[FilterType.Content], content=content).model_dump()
     resp = httpx.post(API_BASE_URL, json=payload)
     resp.raise_for_status()
     return resp.json()
@@ -68,10 +68,9 @@ def render_sidebar_id_query():
 
 def render_sidebar_latest_query():
     with st.sidebar.expander("🆕 Search By Latest N", expanded=False):
-        unit = st.selectbox("unit",["minutes", "hours", "days"], index=2)
         count = st.number_input("Number of messages", min_value=1, max_value=1000, value=5, step=1, key="latest_n")
         if st.button("Search", key="query_latest_n"):
-            latest_n = LatestN(count=count, unit=unit)
+            latest_n = LatestN(count=count)
             msgs = fetch_message_by_latest_n(latest_n)
             st.session_state["query_result"] = msgs if msgs else [{"info": "No messages found"}]
 
