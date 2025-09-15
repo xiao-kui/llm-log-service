@@ -14,14 +14,12 @@ from datetime import datetime, timezone
 
 
 class ChatMessageTinyDb:
-    def __init__(self, base_dir: str):
+    def __init__(self, base_dir: str = ''):
         self.dbs: dict[str, TinyDB] = {}
-        self.base_dir = Path(base_dir)
-        self.base_dir.mkdir(parents=True, exist_ok=True)
         self.current_day_str = ""
-        self.db: Optional[TinyDB] = None
-        self._switch_db(datetime.now(timezone.utc))
-
+        if base_dir:
+            self.base_dir = Path(base_dir)
+            self.base_dir.mkdir(parents=True, exist_ok=True)
 
     def _switch_db(self, now: datetime):
         """切换到对应日期的 tinydb 文件"""
@@ -50,7 +48,8 @@ class ChatMessageTinyDb:
     def insert(self, msg: dict) -> None:
         now = datetime.now(timezone.utc)
         self._switch_db(now)
-        msg["time"] = now.timestamp()
+        msg["datetime"] = now.timestamp()
+        msg["datetime-formatted"] = now.strftime("%Y-%m-%d %H:%M:%S.%f")[:-3]
         self.db.insert(msg)
 
     # ----------------------
@@ -67,7 +66,7 @@ class ChatMessageTinyDb:
         results = []
         for db in self.dbs.values():
             results.extend(
-                db.search((where("time") >= start_ts) & (where("time") <= end_ts))
+                db.search((where("datetime") >= start_ts) & (where("datetime") <= end_ts))
             )
         return results
 
@@ -79,7 +78,7 @@ class ChatMessageTinyDb:
 
     def search_latest_n(self, latest_n: LatestN) -> list[dict]:
         all_msgs = list(self._all_records())
-        all_msgs.sort(key=lambda x: x.get("time", 0), reverse=True)
+        all_msgs.sort(key=lambda x: x.get("datetime", 0), reverse=True)
         return all_msgs[:latest_n.count]
 
     def search_by_content(self, content: str) -> list[dict]:
