@@ -1,31 +1,40 @@
 """
 # @Date    : 2025/09/05
 # @Author  : kui.xiao
-# @Description :
+# @Description : 每天存储一个 tinydb，文件名格式为 YYYY-MM-DD.json，所有 search 方法会查遍所有 db
 """
 
 from streamlit.testing.v1.element_tree import ChatMessage
-from tinydb import TinyDB, Query
-import re
+from tinydb import TinyDB, where
+from tinydb.storages import MemoryStorage
 from typing import Optional
 from backend.schemas.chat_message import LatestN
 from pathlib import Path
-from tinydb.queries import QueryLike
-from tinydb.storages import MemoryStorage
-from tinydb import where
 from datetime import datetime, timezone
 
+
 class ChatMessageTinyDb:
-    def __init__(self):
+    def __init__(self, base_dir: str):
+        self.dbs: dict[str, TinyDB] = {}
+        self.base_dir = Path(base_dir)
+        self.base_dir.mkdir(parents=True, exist_ok=True)
+        self.current_day_str = ""
         self.db: Optional[TinyDB] = None
+        self._switch_db(datetime.now(timezone.utc))
 
-    def init_from_path(self, path:str):
-        self.db = TinyDB(path)
-        return self
 
-    def init_from_list(self, messages: list[ChatMessage]):
+    def _switch_db(self, now: datetime):
+        """切换到对应日期的 tinydb 文件"""
+        day_str = now.strftime("%Y-%m-%d")
+        if day_str not in self.dbs:
+            file_path = self.base_dir / f"{day_str}.json"
+            self.dbs[day_str] = TinyDB(file_path)
+        self.current_day_str = day_str
+        self.db = self.dbs[day_str]
+
+    def init_from_list(self, db_key, messages: list[ChatMessage]):
         """用给定的 ChatMessage 列表初始化内存数据库"""
-        self.db = TinyDB(storage=MemoryStorage)
+        self.dbs[db_key] = TinyDB(storage=MemoryStorage)
         for msg in messages:
             if hasattr(msg, "to_dict"):
                 record = msg.to_dict()
@@ -34,45 +43,61 @@ class ChatMessageTinyDb:
             else:
                 raise TypeError(f"Unsupported ChatMessage type: {type(msg)}")
 
-            self.db.insert(record)
+            self.dbs[db_key].insert(record)
 
         return self
 
     def insert(self, msg: dict) -> None:
-        msg["time"] = datetime.now().timestamp()
-        msg["time"] = datetime.now(timezone.utc).timestamp()
+        now = datetime.now(timezone.utc)
+        self._switch_db(now)
+        msg["time"] = now.timestamp()
         self.db.insert(msg)
 
+    # ----------------------
+    # search 部分：遍历 self.dbs
+    # ----------------------
+    def _all_records(self):
+        """返回所有 db 的全部记录"""
+        for db in self.dbs.values():
+            yield from db.all()
+
     def search_by_time(self, start_time: datetime, end_time: datetime) -> list[dict]:
-        """按时间区间查询消息"""
         start_ts = start_time.timestamp()
         end_ts = end_time.timestamp()
-        return self.db.search((where("time") >= start_ts) & (where("time") <= end_ts))
+        results = []
+        for db in self.dbs.values():
+            results.extend(
+                db.search((where("time") >= start_ts) & (where("time") <= end_ts))
+            )
+        return results
 
     def search_by_uuid(self, uuid: str) -> list[dict]:
-        """根据 uuid 查询消息"""
-        return self.db.search(where("uuid") == uuid) # type: ignore
+        results = []
+        for db in self.dbs.values():
+            results.extend(db.search(where("uuid") == uuid))  # type: ignore
+        return results
 
     def search_latest_n(self, latest_n: LatestN) -> list[dict]:
-        all_msgs = self.db.all()
+        all_msgs = list(self._all_records())
         all_msgs.sort(key=lambda x: x.get("time", 0), reverse=True)
         return all_msgs[:latest_n.count]
 
     def search_by_content(self, content: str) -> list[dict]:
         results = []
-        for item in self.db.all():
+        for item in self._all_records():
             messages = item.get("messages", [])
-            if not messages: continue
+            if not messages:
+                continue
 
             for idx, msg in enumerate(reversed(messages)):
-                if msg.get("role") == "user" or msg.get("role") == "assistant":
-                    if content in msg.get("content", ''):
+                if msg.get("role") in ("user", "assistant"):
+                    if content in msg.get("content", ""):
                         results.append(item)
                         break
                 if idx > 1:
                     break
-
         return results
 
-file_path = Path(__file__).parent.parent / "resources/chat_messages.json"
-chat_message_tinydb = ChatMessageTinyDb().init_from_path(str(file_path))
+
+base_path = Path(__file__).parent.parent / "resources/tinydb"
+chat_message_tinydb = ChatMessageTinyDb(str(base_path))
