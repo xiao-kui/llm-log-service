@@ -37,9 +37,9 @@ def handle_search_chat_message(request: ChatMessageFilter):
                 results = db.search_latest_n(request.latest_n)
             if ele == FilterType.Content:
                 results = db.search_by_content(request.content)
-            db = ChatMessageTinyDb().init_from_list(results)
+            db = ChatMessageTinyDb().init_from_list("temp", results)
 
         return results
     except Exception as e:
         logger.error(f"Error querying by id: {e}")
-        return {}
+        return []

@@ -1,0 +1,4961 @@
+[
+  {
+    "id": "evl-normal-0",
+    "message": [
+      {
+        "role": "user",
+        "content": "help me adjust the climate in car."
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-1",
+    "message": [
+      {
+        "role": "user",
+        "content": "I feel so hot."
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-2",
+    "message": [
+      {
+        "role": "user",
+        "content": "It is so hot in the car"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-3",
+    "message": [
+      {
+        "role": "user",
+        "content": "it is too hot"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"Would you like me to turn on the air conditioning to make it cooler?\"}"
+      },
+      {
+        "role": "user",
+        "content": "sounds ok"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-4",
+    "message": [
+      {
+        "role": "user",
+        "content": "I cannot bear the hot in car"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-5",
+    "message": [
+      {
+        "role": "user",
+        "content": "I cannot bear the hot in car"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\":\"Would you like me to turn on the air conditioning or lower the temperature?\"}"
+      },
+      {
+        "role": "user",
+        "content": "yes, turn it on"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-6",
+    "message": [
+      {
+        "role": "user",
+        "content": "It's very humid today."
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"I can help with that. Would you like me to turn on the air conditioning or the air purifier \"}"
+      },
+      {
+        "role": "user",
+        "content": "No need for air purifier."
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-7",
+    "message": [
+      {
+        "role": "user",
+        "content": "Our gas won't last for the trip home we don't really need ac in the vehicle"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-8",
+    "message": [
+      {
+        "role": "user",
+        "content": "i feel too hot"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\":\"Would you like me to  decrease the temperature or adjusting the fan speed?\"}"
+      },
+      {
+        "role": "user",
+        "content": "try your best, it's so hot there"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-9",
+    "message": [
+      {
+        "role": "user",
+        "content": "what's the weather like today"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Check the weather for today\"}"
+      },
+      {
+        "role": "user",
+        "content": "can you turn off the max ac"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-10",
+    "message": [
+      {
+        "role": "user",
+        "content": "I don't see any visible dust anymore we can deactivate the air filter"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-11",
+    "message": [
+      {
+        "role": "user",
+        "content": "The air inside feels a bit stale"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-12",
+    "message": [
+      {
+        "role": "user",
+        "content": "the car is a bit stuffy, is there any functionality that can freshen it up"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-13",
+    "message": [
+      {
+        "role": "user",
+        "content": "turn on the fog lights"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Turn on fog lights\"}"
+      },
+      {
+        "role": "user",
+        "content": "close the sunshade"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"close sunshade\"}"
+      },
+      {
+        "role": "user",
+        "content": "navigate to the closest restroom"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Navigate to closest restroom\"}"
+      },
+      {
+        "role": "user",
+        "content": "turn off the seat massage"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Turn off seat massage\"}"
+      },
+      {
+        "role": "user",
+        "content": "i need to find a gas station to refuel"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"Would you like me to navigate to the nearest gas station for you?\"}"
+      },
+      {
+        "role": "user",
+        "content": "the car is a bit stuffy, can we freshen it up"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-14",
+    "message": [
+      {
+        "role": "user",
+        "content": "The dust in the car is bothering my allergies Can we do something about it"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-15",
+    "message": [
+      {
+        "role": "user",
+        "content": "The car doesn't smell anymore we can disable the air purification system"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-16",
+    "message": [
+      {
+        "role": "user",
+        "content": "The air quality index is showing high PM2.5 levels we should start the car's air filtration system"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-17",
+    "message": [
+      {
+        "role": "user",
+        "content": "Activate the air filtration system"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-18",
+    "message": [
+      {
+        "role": "user",
+        "content": "It looks like the dust has cleared up we can turn off the air filter now"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-19",
+    "message": [
+      {
+        "role": "user",
+        "content": "The car smells"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-20",
+    "message": [
+      {
+        "role": "user",
+        "content": "will it rain tomorrow"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Check the weather for tomorrow\"}"
+      },
+      {
+        "role": "user",
+        "content": "give a one day trip plan for NY"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"Sure! For a one-day trip in New York, you might start with a visit to the Statue of Liberty and Ellis Island. Then, explore Central Park and walk along the High Line. Don't miss the chance to see the iconic Times Square and the Empire State Building. For lunch, you could try a famous New York-style pizza. In the evening, enjoy a Broadway show and end your night with a walk around the vibrant neighborhood of Greenwich Village. How does that sound?\"}"
+      },
+      {
+        "role": "user",
+        "content": "will it rain tomorrow in NY"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Check the weather for tomorrow in New York\"}"
+      },
+      {
+        "role": "user",
+        "content": "is there any functionality that can provide some cozy atmosphere"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-21",
+    "message": [
+      {
+        "role": "user",
+        "content": "it's getting dark"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"Would you like me to turn on the headlights for you?\"}"
+      },
+      {
+        "role": "user",
+        "content": "yes"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Turn on headlights\"}"
+      },
+      {
+        "role": "user",
+        "content": "and turn on the ambient lights too"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-22",
+    "message": [
+      {
+        "role": "user",
+        "content": "it's getting dark"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"Would you like me to turn on the headlights for you?\"}"
+      },
+      {
+        "role": "user",
+        "content": "yes"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Turn on headlights\"}"
+      },
+      {
+        "role": "user",
+        "content": "and turn on the ambient lights too"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Turn on ambient lights\"}"
+      },
+      {
+        "role": "user",
+        "content": "make the lights blue"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-23",
+    "message": [
+      {
+        "role": "user",
+        "content": "What options do I have to make the car more inviting?"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-24",
+    "message": [
+      {
+        "role": "user",
+        "content": "Can I make the lighting inside more comfortable?"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-25",
+    "message": [
+      {
+        "role": "user",
+        "content": "it's getting a bit dark in here"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"Should I turn on the headlights for you?\"}"
+      },
+      {
+        "role": "user",
+        "content": "yes"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Turn on headlights\"}"
+      },
+      {
+        "role": "user",
+        "content": "Could you also switch on the mood lighting?"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-26",
+    "message": [
+      {
+        "role": "user",
+        "content": "it's getting dark outside"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"Would you like me to turn on the headlights?\"}"
+      },
+      {
+        "role": "user",
+        "content": "yes, please"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Turn on headlights\"}"
+      },
+      {
+        "role": "user",
+        "content": "I'd like the ambient lights turned on."
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-27",
+    "message": [
+      {
+        "role": "user",
+        "content": "it's getting dark outside"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"Would you like me to turn on the headlights?\"}"
+      },
+      {
+        "role": "user",
+        "content": "yes"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Turn on headlights\"}"
+      },
+      {
+        "role": "user",
+        "content": "It's a bit too dark in here. Can you turn on the ambient lights for a more pleasant atmosphere?"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-28",
+    "message": [
+      {
+        "role": "user",
+        "content": "Can you show me the total mileage?"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-29",
+    "message": [
+      {
+        "role": "user",
+        "content": "Can you tell me how far I can drive before I need to recharge?"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-30",
+    "message": [
+      {
+        "role": "user",
+        "content": "Can you tell me the total distance we've traveled?"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-31",
+    "message": [
+      {
+        "role": "user",
+        "content": "What's the current status of our tires?"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-32",
+    "message": [
+      {
+        "role": "user",
+        "content": "I need to know the current battery percentage."
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-33",
+    "message": [
+      {
+        "role": "user",
+        "content": "I need to know the tire pressure right now."
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-34",
+    "message": [
+      {
+        "role": "user",
+        "content": "I'm getting a low battery alert on my dash"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-35",
+    "message": [
+      {
+        "role": "user",
+        "content": "Tell me the tire pressure."
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-36",
+    "message": [
+      {
+        "role": "user",
+        "content": "What's the battery level right now?"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-37",
+    "message": [
+      {
+        "role": "user",
+        "content": "How far can I drive before needing a charge?"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-38",
+    "message": [
+      {
+        "role": "user",
+        "content": "Wow the scenery is amazing out there it's easier to see with the windows down"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-39",
+    "message": [
+      {
+        "role": "user",
+        "content": "i feel a bit hot, help me adjust the temperature"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Decrease the temperature\"}"
+      },
+      {
+        "role": "user",
+        "content": "that's not enough, 3 degrees again"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Decrease the temperature by 3 degrees\"}"
+      },
+      {
+        "role": "user",
+        "content": "close all windows for me"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-40",
+    "message": [
+      {
+        "role": "user",
+        "content": "can you turn on the music?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Play music\"}"
+      },
+      {
+        "role": "user",
+        "content": "a bit louder, please"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Increase the volume\"}"
+      },
+      {
+        "role": "user",
+        "content": "What are some must-visit historical landmarks in Washington D.C."
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"Some must-visit historical landmarks in Washington D.C. include the Lincoln Memorial, which honors President Abraham Lincoln; the Washington Monument, a towering obelisk dedicated to the first U.S. president; the Capitol Building, where Congress meets; the White House, the residence and workplace of the President of the United States; the National Mall, home to many monuments and museums; and the Smithsonian National Museum of American History, which showcases the nation's history and culture.\"}"
+      },
+      {
+        "role": "user",
+        "content": "i feel a bit stuffy in here"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-41",
+    "message": [
+      {
+        "role": "user",
+        "content": "i need some fresh air from my side"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-42",
+    "message": [
+      {
+        "role": "user",
+        "content": "i need some fresh air from my side"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Open the driver's window\"}"
+      },
+      {
+        "role": "user",
+        "content": "the codriver also need it"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Open the codriver's window\"}"
+      },
+      {
+        "role": "user",
+        "content": "now close all of the windows"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-43",
+    "message": [
+      {
+        "role": "user",
+        "content": "the window is too low it can't block the rain"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-44",
+    "message": [
+      {
+        "role": "user",
+        "content": "it's so hot out there let's shut the windows to keep the heat out"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-45",
+    "message": [
+      {
+        "role": "user",
+        "content": "i need some fresh air outside"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-46",
+    "message": [
+      {
+        "role": "user",
+        "content": "Can we leave a small gap in the window for ventilation"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-47",
+    "message": [
+      {
+        "role": "user",
+        "content": "i need some fresh air outside"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Open the driver's window\"}"
+      },
+      {
+        "role": "user",
+        "content": "do it for the copilot side"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Open the car window on the copilot side\"}"
+      },
+      {
+        "role": "user",
+        "content": "make my window half open"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Lower the driver's side window halfway\"}"
+      },
+      {
+        "role": "user",
+        "content": "the rear row also need some fresh air"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Open the rear windows\"}"
+      },
+      {
+        "role": "user",
+        "content": "now close them all"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-48",
+    "message": [
+      {
+        "role": "user",
+        "content": "Why is the air so stuffy in here?"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-49",
+    "message": [
+      {
+        "role": "user",
+        "content": "I need fresh air, change it to outer cycle now."
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-50",
+    "message": [
+      {
+        "role": "user",
+        "content": "Please put the air system on inner cycle"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-51",
+    "message": [
+      {
+        "role": "user",
+        "content": "Can you set the air to auto cycle?"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-52",
+    "message": [
+      {
+        "role": "user",
+        "content": "I need fresh air, change it to outer cycle now"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-53",
+    "message": [
+      {
+        "role": "user",
+        "content": "Please set the air system to auto cycle."
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-54",
+    "message": [
+      {
+        "role": "user",
+        "content": "Can you put it on inner cycle mode?"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-55",
+    "message": [
+      {
+        "role": "user",
+        "content": "Can you switch the air mode to fresh?"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-56",
+    "message": [
+      {
+        "role": "user",
+        "content": "I think the car needs better ventilation."
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-57",
+    "message": [
+      {
+        "role": "user",
+        "content": "Change the air to inner cycle."
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-58",
+    "message": [
+      {
+        "role": "user",
+        "content": "How to make my face cooler?"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-59",
+    "message": [
+      {
+        "role": "user",
+        "content": " lower the temperature for me"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Decrease the temperature\"}"
+      },
+      {
+        "role": "user",
+        "content": "not enough, another 2 degrees"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Decrease the temperature by 2 degrees\"}"
+      },
+      {
+        "role": "user",
+        "content": "I'm sweating on my back, let's have some cool breeze."
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"Would you like me to turn on the seat ventilation for you?\"}"
+      },
+      {
+        "role": "user",
+        "content": "let some wind to my face"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-60",
+    "message": [
+      {
+        "role": "user",
+        "content": "My feet feels like it needs some fresh air specifically in this spot"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-61",
+    "message": [
+      {
+        "role": "user",
+        "content": "It would be nice to have some airflow specifically on my feet here"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-62",
+    "message": [
+      {
+        "role": "user",
+        "content": "I need some air circulation around my feet right here"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-63",
+    "message": [
+      {
+        "role": "user",
+        "content": "It would be great to have some circulation on my face"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-64",
+    "message": [
+      {
+        "role": "user",
+        "content": "Ensure proper air circulation in the front windshield alone"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-65",
+    "message": [
+      {
+        "role": "user",
+        "content": "I feel so cold"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"Would you like me to increase the temperature in car?\"}"
+      },
+      {
+        "role": "user",
+        "content": "yes"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Increase temperature by 2 degrees\"}"
+      },
+      {
+        "role": "user",
+        "content": "I need some hot air to my face."
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-66",
+    "message": [
+      {
+        "role": "user",
+        "content": "My feet are freezing"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-67",
+    "message": [
+      {
+        "role": "user",
+        "content": "i need some fresh air from my side"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Open the driver's window\"}"
+      },
+      {
+        "role": "user",
+        "content": "the codriver also need it"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Open the codriver's window\"}"
+      },
+      {
+        "role": "user",
+        "content": "now close all of the windows"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Close all the car windows\"}"
+      },
+      {
+        "role": "user",
+        "content": " lower the temperature for me"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Decrease the temperature\"}"
+      },
+      {
+        "role": "user",
+        "content": "not enough, another 2 degrees"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Decrease the temperature by 2 degrees\"}"
+      },
+      {
+        "role": "user",
+        "content": "I'm sweating on my back, let's have some cool breeze."
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Turn on seat ventilation for the driver's seat\"}"
+      },
+      {
+        "role": "user",
+        "content": "let some wind to my face"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-68",
+    "message": [
+      {
+        "role": "user",
+        "content": "I'm feeling a bit overwhelmed by the strong air in the car"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-69",
+    "message": [
+      {
+        "role": "user",
+        "content": "I'm not feeling enough air movement in the car"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-70",
+    "message": [
+      {
+        "role": "user",
+        "content": "The fan is giving me a headache"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-71",
+    "message": [
+      {
+        "role": "user",
+        "content": "The wind at the driver's seat is too forceful"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-72",
+    "message": [
+      {
+        "role": "user",
+        "content": "I cannot feel any wind from the fan"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-73",
+    "message": [
+      {
+        "role": "user",
+        "content": "I wish the breeze was softer inside the vehicle"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-74",
+    "message": [
+      {
+        "role": "user",
+        "content": "The fan is giving me a headache"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-75",
+    "message": [
+      {
+        "role": "user",
+        "content": "The airflow in the car isn't quite intense enough"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-76",
+    "message": [
+      {
+        "role": "user",
+        "content": "It's too hot I am sweating"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"Would you like me to lower the temperature for you?\"}"
+      },
+      {
+        "role": "user",
+        "content": "no, a faster fan would be better"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-77",
+    "message": [
+      {
+        "role": "user",
+        "content": "The wind at the driver's seat is too forceful"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-78",
+    "message": [
+      {
+        "role": "user",
+        "content": "Could you turn on the rear fog lights?"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-79",
+    "message": [
+      {
+        "role": "user",
+        "content": "Please activate the front fog lights."
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-80",
+    "message": [
+      {
+        "role": "user",
+        "content": "Hey, what about the fog lights?"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-81",
+    "message": [
+      {
+        "role": "user",
+        "content": "Turn on the front fog lights, please."
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-82",
+    "message": [
+      {
+        "role": "user",
+        "content": "Can you switch off the rear fog lights?"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-83",
+    "message": [
+      {
+        "role": "user",
+        "content": "Please turn off the front fog lights."
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-84",
+    "message": [
+      {
+        "role": "user",
+        "content": "Can you make sure the rear fog lights are off?"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-85",
+    "message": [
+      {
+        "role": "user",
+        "content": "It's foggy ahead."
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"Would you like me to turn on the fog light?\"}"
+      },
+      {
+        "role": "user",
+        "content": "yes"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-86",
+    "message": [
+      {
+        "role": "user",
+        "content": "Is it possible to adjust the fog lights?"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-87",
+    "message": [
+      {
+        "role": "user",
+        "content": "Can we do something about the fog lights?"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-88",
+    "message": [
+      {
+        "role": "user",
+        "content": "Tell me a joke about Peugeot"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-89",
+    "message": [
+      {
+        "role": "user",
+        "content": "I'm not feeling very music-oriented at the moment"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-90",
+    "message": [
+      {
+        "role": "user",
+        "content": "Frappuccino is my favorite drink"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-91",
+    "message": [
+      {
+        "role": "user",
+        "content": "who are you"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-92",
+    "message": [
+      {
+        "role": "user",
+        "content": "Have you ever done any volunteer work"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-93",
+    "message": [
+      {
+        "role": "user",
+        "content": "I feel a bit tired"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-94",
+    "message": [
+      {
+        "role": "user",
+        "content": "I'm delighted"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-95",
+    "message": [
+      {
+        "role": "user",
+        "content": "my hands are cold"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"Would you like me to turn on the steering wheel heating for you?\"}"
+      },
+      {
+        "role": "user",
+        "content": "yes, turn it on"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Turn on steering wheel heating\"}"
+      },
+      {
+        "role": "user",
+        "content": "can you increase the intensity"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Increase steering wheel heating intensity\"}"
+      },
+      {
+        "role": "user",
+        "content": "I can't see clearly through the windshield"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"Would you like me to turn on the wipers for you?\"}"
+      },
+      {
+        "role": "user",
+        "content": "yes, please"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Turn on wipers\"}"
+      },
+      {
+        "role": "user",
+        "content": "can you increase the speed of the wipers"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Increase wiper speed\"}"
+      },
+      {
+        "role": "user",
+        "content": "What is the name of the island prison in San Francisco Bay"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"The island prison in San Francisco Bay is called Alcatraz Island. It was a federal prison until 1963 and is now a popular tourist attraction.\"}"
+      },
+      {
+        "role": "user",
+        "content": "cool"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-96",
+    "message": [
+      {
+        "role": "user",
+        "content": "Considering the gas situation I suggest we don't use the seat massage"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-97",
+    "message": [
+      {
+        "role": "user",
+        "content": "my shoulder is hurting after working"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"Would you like me to turn on the seat massage function to help relieve some tension in your shoulders?\"}"
+      },
+      {
+        "role": "user",
+        "content": "will it work"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"The seat massage function can help relax your muscles and provide some relief. Would you like me to turn it on for you?\"}"
+      },
+      {
+        "role": "user",
+        "content": "I'll have a try"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Turn on the seat massage function\"}"
+      },
+      {
+        "role": "user",
+        "content": "good"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"I'm glad you like it. Is there anything else I can help you with?\"}"
+      },
+      {
+        "role": "user",
+        "content": "who are you"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-98",
+    "message": [
+      {
+        "role": "user",
+        "content": "my hand is freezing"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"Would you like me to turn on steering wheel heating?\"}"
+      },
+      {
+        "role": "user",
+        "content": "make it warm faster"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Increase steering wheel heating level\"}"
+      },
+      {
+        "role": "user",
+        "content": "great, let's have some classic music on the road"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-99",
+    "message": [
+      {
+        "role": "user",
+        "content": "let's Beatles on the road trip"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-100",
+    "message": [
+      {
+        "role": "user",
+        "content": "I'm in the mood for the classics from Madonna's Material Girl era"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-101",
+    "message": [
+      {
+        "role": "user",
+        "content": "I'm feeling a bit cold."
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"Would you like me to increase the temperature in car?\"}"
+      },
+      {
+        "role": "user",
+        "content": "yes, please"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Increase temperature by 2 degrees\"}"
+      },
+      {
+        "role": "user",
+        "content": "Make the seat warmer."
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"Would you like me to activate seat heating for you?\"}"
+      },
+      {
+        "role": "user",
+        "content": "What are some famous beaches in California?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"Some famous beaches in California include Venice Beach, known for its vibrant boardwalk and Muscle Beach; Santa Monica Beach, which features an iconic pier with an amusement park; Malibu's Zuma Beach, popular for its wide sandy shores; and Laguna Beach, renowned for its scenic beauty and art festivals. Each offers unique experiences and stunning coastal views.\"}"
+      },
+      {
+        "role": "user",
+        "content": "Can we listen to some jazz?"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-102",
+    "message": [
+      {
+        "role": "user",
+        "content": "I feel like rocking out"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-103",
+    "message": [
+      {
+        "role": "user",
+        "content": "prepare some songs ready for our road trip together"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-104",
+    "message": [
+      {
+        "role": "user",
+        "content": "Recommend me some classic pigs that is relaxing"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"It seems like you might want some relaxing classical music. Would you like me to play some for you?\"}"
+      },
+      {
+        "role": "user",
+        "content": "yes, go ahead"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-105",
+    "message": [
+      {
+        "role": "user",
+        "content": "play channel for me"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"Sure, which channel would you like to play?\"}"
+      },
+      {
+        "role": "user",
+        "content": "i mean cello music"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-106",
+    "message": [
+      {
+        "role": "user",
+        "content": "i feel tired after work"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"It sounds like you could use some relaxation. Would you like me to turn on the seat massage for you?\"}"
+      },
+      {
+        "role": "user",
+        "content": " yes, please"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Turn on seat massage for the driver's seat\"}"
+      },
+      {
+        "role": "user",
+        "content": "can i have some jazz"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-107",
+    "message": [
+      {
+        "role": "user",
+        "content": "Let's create a happy atmosphere with some upbeat song"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-108",
+    "message": [
+      {
+        "role": "user",
+        "content": "Turn on the headlights"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-109",
+    "message": [
+      {
+        "role": "user",
+        "content": "I need the low beams on now"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-110",
+    "message": [
+      {
+        "role": "user",
+        "content": "Can you change the headlights to automatic?"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-111",
+    "message": [
+      {
+        "role": "user",
+        "content": "it's getting dark"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-112",
+    "message": [
+      {
+        "role": "user",
+        "content": "Can we switch the headlights to a different mode?"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-113",
+    "message": [
+      {
+        "role": "user",
+        "content": "Why are the headlights off? Turn them on now!"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-114",
+    "message": [
+      {
+        "role": "user",
+        "content": "Turn on the high beams"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-115",
+    "message": [
+      {
+        "role": "user",
+        "content": "it's getting dark"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"Would you like me to turn on the headlights for you?\"}"
+      },
+      {
+        "role": "user",
+        "content": "yes"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-116",
+    "message": [
+      {
+        "role": "user",
+        "content": "Set the headlights to maximum brightness"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-117",
+    "message": [
+      {
+        "role": "user",
+        "content": "Please set the headlights to automatic mode"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-118",
+    "message": [
+      {
+        "role": "user",
+        "content": "I'm curious about the song that Madonna premiered during her Super Bowl halftime performance"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-119",
+    "message": [
+      {
+        "role": "user",
+        "content": "Do you know the name of the song that we frequently sung at birthday celebrations"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-120",
+    "message": [
+      {
+        "role": "user",
+        "content": "what is the most famous piano piece"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\":\"One of the most famous piano pieces is Ludwig van Beethoven's 'F??r Elise'. It's widely recognized and loved by many.\"}"
+      },
+      {
+        "role": "user",
+        "content": "what about violin pieces"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-121",
+    "message": [
+      {
+        "role": "user",
+        "content": "who is known as the First Lady of Song"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-122",
+    "message": [
+      {
+        "role": "user",
+        "content": "Who are the members of The Beatles"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-123",
+    "message": [
+      {
+        "role": "user",
+        "content": "I'm curious about the song written by Adele as a reflection on a past relationship"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-124",
+    "message": [
+      {
+        "role": "user",
+        "content": "Who are the members of The Beatles"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"The Beatles were a British rock band formed in Liverpool in 1960. The members were John Lennon, Paul McCartney, George Harrison, and Ringo Starr.\"}"
+      },
+      {
+        "role": "user",
+        "content": "what is the most famous piece of them"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-125",
+    "message": [
+      {
+        "role": "user",
+        "content": "I'm curious about the song written by John Lennon as a plea for world peace"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-126",
+    "message": [
+      {
+        "role": "user",
+        "content": "Which is the famous coldplay song that talks about a king"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-127",
+    "message": [
+      {
+        "role": "user",
+        "content": "suggest some pop singers for me "
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"Sure! How about listening to Taylor Swift, Ariana Grande, or Billie Eilish? They are popular pop singers.\"}"
+      },
+      {
+        "role": "user",
+        "content": "tell me more about the last singer"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-128",
+    "message": [
+      {
+        "role": "user",
+        "content": "I think it's a good idea to play some songs on the road"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-129",
+    "message": [
+      {
+        "role": "user",
+        "content": "This song doesn't deserve a spot in my collection anymore"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-130",
+    "message": [
+      {
+        "role": "user",
+        "content": "Since we're nearly home let's temporarily stop the music for now"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-131",
+    "message": [
+      {
+        "role": "user",
+        "content": "play channel for me"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-132",
+    "message": [
+      {
+        "role": "user",
+        "content": "I can't wait for the upcoming song, how about jump to it"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-133",
+    "message": [
+      {
+        "role": "user",
+        "content": "I'm missing the music that was on before this one"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-134",
+    "message": [
+      {
+        "role": "user",
+        "content": "I'm not enjoying these songs hit pause for a bit"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-135",
+    "message": [
+      {
+        "role": "user",
+        "content": "I can't wait for the upcoming song, how about jump to it"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"skip to the next song\"}"
+      },
+      {
+        "role": "user",
+        "content": "add the current one to my list"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-136",
+    "message": [
+      {
+        "role": "user",
+        "content": "This traffic is killing me Can we at least play some music to pass the time"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-137",
+    "message": [
+      {
+        "role": "user",
+        "content": "Do I have to wait for each song until my favorite one comes up"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-138",
+    "message": [
+      {
+        "role": "user",
+        "content": "I want to have some entertainment"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-139",
+    "message": [
+      {
+        "role": "user",
+        "content": "Music is a great way to start the day"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-140",
+    "message": [
+      {
+        "role": "user",
+        "content": "what's the weather like today"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Check the weather for today\"}"
+      },
+      {
+        "role": "user",
+        "content": "can you turn off the max ac"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Turn off max AC\"}"
+      },
+      {
+        "role": "user",
+        "content": "skip to the next song"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Skip to the next song\"}"
+      },
+      {
+        "role": "user",
+        "content": "increase the volume by 10"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Increase volume by 10\"}"
+      },
+      {
+        "role": "user",
+        "content": "can you recommend some classic music for the road trip in LA"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-141",
+    "message": [
+      {
+        "role": "user",
+        "content": "I'm tired, recommend me some music"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-142",
+    "message": [
+      {
+        "role": "user",
+        "content": "i need to take a nap"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-143",
+    "message": [
+      {
+        "role": "user",
+        "content": "I feel a bit stressed."
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-144",
+    "message": [
+      {
+        "role": "user",
+        "content": "surprise me with a podcast."
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-145",
+    "message": [
+      {
+        "role": "user",
+        "content": "Recommend me some classic pieces that can help me relax"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"How about some classical music? You might enjoy pieces by Beethoven, Mozart, or Bach. Would you like me to play some for you?\"}"
+      },
+      {
+        "role": "user",
+        "content": "Piano is not my cup of tea, I prefer channel"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"I recommend you listen to some soothing channel music. Would you like me to play a relaxing channel station for you?\"}"
+      },
+      {
+        "role": "user",
+        "content": "i meant to say i prefer cello"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-146",
+    "message": [
+      {
+        "role": "user",
+        "content": "This music is making me feel drowsy."
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-147",
+    "message": [
+      {
+        "role": "user",
+        "content": "Entertain me for a bit"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-148",
+    "message": [
+      {
+        "role": "user",
+        "content": "Frappuccino is my favorite drink"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"That's great! If you're in the mood for a coffee-flavored Frappuccino, I can find the nearest Starbucks for you. Would you like me to do that?\"}"
+      },
+      {
+        "role": "user",
+        "content": "yes"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-149",
+    "message": [
+      {
+        "role": "user",
+        "content": "i need to buy some drink for this hot weather"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"Would you like me to find the nearest  convenience store for you?\"}"
+      },
+      {
+        "role": "user",
+        "content": "a store would be nice"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-150",
+    "message": [
+      {
+        "role": "user",
+        "content": "i wanna drink some whiskey"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"It's best to wait until you're not driving to enjoy some whiskey. Can I help you with anything else, like finding a nearby restaurant or playing some music?\"}"
+      },
+      {
+        "role": "user",
+        "content": "ok, cafe then"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-151",
+    "message": [
+      {
+        "role": "user",
+        "content": "I'm in the mood for some music "
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"What kind of music would you like to listen to?\"}"
+      },
+      {
+        "role": "user",
+        "content": "play some jazz "
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Play jazz music\"}"
+      },
+      {
+        "role": "user",
+        "content": "the windshield is dirty "
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"Would you like me to turn on the wipers?\"}"
+      },
+      {
+        "role": "user",
+        "content": "yes "
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Turn on wipers\"}"
+      },
+      {
+        "role": "user",
+        "content": "I'm hungry"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"Would you like me to find a nearby restaurant?\"}"
+      },
+      {
+        "role": "user",
+        "content": "yes, please"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-152",
+    "message": [
+      {
+        "role": "user",
+        "content": "I want to wash my car"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-153",
+    "message": [
+      {
+        "role": "user",
+        "content": "i need some cold drink for this hot summer"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"Would you like me to find the nearest convenience store for you?\"}"
+      },
+      {
+        "role": "user",
+        "content": "a cafe would be nice"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Navigate to the nearest cafe\"}"
+      },
+      {
+        "role": "user",
+        "content": "can you make the car cooler"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Decrease the temperature\"}"
+      },
+      {
+        "role": "user",
+        "content": "decrease 2 degrees more"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Decrease the temperature by 2 degrees\"}"
+      },
+      {
+        "role": "user",
+        "content": "Frappuccino is my favorite drink for this summer"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-154",
+    "message": [
+      {
+        "role": "user",
+        "content": "I really enjoy having Frappuccino in this hot summer. Do you know where I can get one?"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-155",
+    "message": [
+      {
+        "role": "user",
+        "content": "It's time for me to go get my teeth cleaned"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-156",
+    "message": [
+      {
+        "role": "user",
+        "content": "My car is running out of battery"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-157",
+    "message": [
+      {
+        "role": "user",
+        "content": "It's been a while since I had Thai food Is there any place nearby"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-158",
+    "message": [
+      {
+        "role": "user",
+        "content": "What is the name of the large park in the center of New York City"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"The large park in the center of New York City is Central Park. It's a popular destination for locals and tourists alike, offering a variety of attractions, including the Central Park Zoo, the Central Park Conservatory Garden, and the Great Lawn.\"}"
+      },
+      {
+        "role": "user",
+        "content": "great, take me there"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-159",
+    "message": [
+      {
+        "role": "user",
+        "content": "where can I see the best view of the Eiffel Tower"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"The best view of the Eiffel Tower can be seen from the Trocad??ro Gardens. It offers a stunning, unobstructed view of the tower, especially at sunrise or sunset. Another great spot is the Champ de Mars, which provides a close-up view of the Eiffel Tower. For a unique perspective, you can also take a boat cruise on the Seine River.\"}"
+      },
+      {
+        "role": "user",
+        "content": "take me to the that Gardens"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-160",
+    "message": [
+      {
+        "role": "user",
+        "content": "The traffic is too heavy let's just go straight home"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-161",
+    "message": [
+      {
+        "role": "user",
+        "content": "The traffic is too heavy let's just go home directly"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-162",
+    "message": [
+      {
+        "role": "user",
+        "content": "What's a must-see attraction in Paris?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"A must-see attraction in Paris is the Eiffel Tower. It's the most recognizable symbol of Paris and offers spectacular views of the city from its observation decks. Another iconic site is the Louvre Museum, home to the Mona Lisa and countless other masterpieces.\"}"
+      },
+      {
+        "role": "user",
+        "content": "Can you guide me to the second one?"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-163",
+    "message": [
+      {
+        "role": "user",
+        "content": "I don't know how to get to The City of Angels"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-164",
+    "message": [
+      {
+        "role": "user",
+        "content": "I'd like to go to the famous place in Washington, D.C. that commemorates President Lincoln"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-165",
+    "message": [
+      {
+        "role": "user",
+        "content": "which place has most visitors in new york city"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"The place with the most visitors in New York City is Times Square. It's a major commercial and tourist hub, known for its bright lights, Broadway theaters, and bustling atmosphere.\"}"
+      },
+      {
+        "role": "user",
+        "content": "drive me there"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-166",
+    "message": [
+      {
+        "role": "user",
+        "content": " Navigate the winding road full of flowers in SF"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-167",
+    "message": [
+      {
+        "role": "user",
+        "content": "What can I visit in Los Angeles if I only have one choice"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"If you only have one choice, I would recommend visiting the Griffith Observatory. It offers stunning views of the city and the Hollywood Sign, and you can also explore the exhibits and telescopes inside.\"}"
+      },
+      {
+        "role": "user",
+        "content": "great! Take me there"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-168",
+    "message": [
+      {
+        "role": "user",
+        "content": "Have you heard about the fuel efficiency of Toyota vehicles"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-169",
+    "message": [
+      {
+        "role": "user",
+        "content": "Hotpot is so spicy that it gives me a stomachache. How can I alleviate it?"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-170",
+    "message": [
+      {
+        "role": "user",
+        "content": "How to make my face cooler?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Set fan blowing direction to face\"}"
+      },
+      {
+        "role": "user",
+        "content": "i also need some wind on my feet"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Set fan blowing direction to feet\"}"
+      },
+      {
+        "role": "user",
+        "content": "what is the seat heating used for"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"Seat heating is used to warm up the seats, providing extra comfort during cold weather. It can be especially useful during winter or on chilly mornings.\"}"
+      },
+      {
+        "role": "user",
+        "content": "is there a device to cool the seat"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-171",
+    "message": [
+      {
+        "role": "user",
+        "content": "Who is the author of Oliver Twist"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-172",
+    "message": [
+      {
+        "role": "user",
+        "content": "tell me which movie Julie Powell starred in"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-173",
+    "message": [
+      {
+        "role": "user",
+        "content": "How to make my face cooler?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Set fan blowing direction to face\"}"
+      },
+      {
+        "role": "user",
+        "content": "i also need some wind on my feet"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Set fan blowing direction to feet\"}"
+      },
+      {
+        "role": "user",
+        "content": "what is the seat heating used for"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-174",
+    "message": [
+      {
+        "role": "user",
+        "content": "When did the World War I start"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-175",
+    "message": [
+      {
+        "role": "user",
+        "content": "What is the recipe for brownies"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-176",
+    "message": [
+      {
+        "role": "user",
+        "content": "What party does Tony Blair belong to"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-177",
+    "message": [
+      {
+        "role": "user",
+        "content": "hi"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"Hello! How can I assist you today?\"}"
+      },
+      {
+        "role": "user",
+        "content": "I'm getting a bit sweaty in this car"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"Would you like me to decrease the temperature?\"}"
+      },
+      {
+        "role": "user",
+        "content": "yes"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"decrease temperature by 2 degrees\"}"
+      },
+      {
+        "role": "user",
+        "content": "How does seat ventilation work?"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-178",
+    "message": [
+      {
+        "role": "user",
+        "content": "i wanna drink some whiskey on this driving"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-179",
+    "message": [
+      {
+        "role": "user",
+        "content": "I need to park my car"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-180",
+    "message": [
+      {
+        "role": "user",
+        "content": "can you check my home's security cameras"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-181",
+    "message": [
+      {
+        "role": "user",
+        "content": "can you take me to buy an elephant"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-182",
+    "message": [
+      {
+        "role": "user",
+        "content": "I'll opt-out of having this song in my collection"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-183",
+    "message": [
+      {
+        "role": "user",
+        "content": "can u help to turn off the lights in my bedroom"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"I'm sorry, I can't assist with that as I am a car's voice assistant. You might need to use your home automation system or manually turn off the lights.\"}"
+      },
+      {
+        "role": "user",
+        "content": "try it"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-184",
+    "message": [
+      {
+        "role": "user",
+        "content": "can you book a flight for me"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-185",
+    "message": [
+      {
+        "role": "user",
+        "content": "could you lock the doors of my house"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-186",
+    "message": [
+      {
+        "role": "user",
+        "content": "can u help to turn off the lights in my bedroom"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-187",
+    "message": [
+      {
+        "role": "user",
+        "content": "turn on my smart TV"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-188",
+    "message": [
+      {
+        "role": "user",
+        "content": "I think i am having a heart attack"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-189",
+    "message": [
+      {
+        "role": "user",
+        "content": "I think i am having a heart attack"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"I think it's best to seek immediate medical attention. Would you like me to call emergency services for you?\"}"
+      },
+      {
+        "role": "user",
+        "content": "Yes please"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-190",
+    "message": [
+      {
+        "role": "user",
+        "content": "i cannot wait to share a good news to Sam. Call him now"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-191",
+    "message": [
+      {
+        "role": "user",
+        "content": "i need to call 911"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-192",
+    "message": [
+      {
+        "role": "user",
+        "content": "there's an accident. call someone for help"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-193",
+    "message": [
+      {
+        "role": "user",
+        "content": "i cannot wait to share my latest promotion to my dad. Call him now"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-194",
+    "message": [
+      {
+        "role": "user",
+        "content": "what is the emergency number for fire in the states"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"The emergency number for fire in the United States is 911.\"}"
+      },
+      {
+        "role": "user",
+        "content": "call it now"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-195",
+    "message": [
+      {
+        "role": "user",
+        "content": "I want to make a phone call"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-196",
+    "message": [
+      {
+        "role": "user",
+        "content": "I want to make a phone call"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"Who would you like to call?\"}"
+      },
+      {
+        "role": "user",
+        "content": "call Mom"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-197",
+    "message": [
+      {
+        "role": "user",
+        "content": "what is the iconic landmark in new york"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-198",
+    "message": [
+      {
+        "role": "user",
+        "content": "How tall is Kiev TV Tower"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-199",
+    "message": [
+      {
+        "role": "user",
+        "content": "Where's the best place to photograph the London skyline?"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-200",
+    "message": [
+      {
+        "role": "user",
+        "content": "What is the name of the famous bridge that connects San Francisco to Marin County?"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-201",
+    "message": [
+      {
+        "role": "user",
+        "content": "Where can you find the iconic Hollywood sign in Los Angeles?"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-202",
+    "message": [
+      {
+        "role": "user",
+        "content": "What is the tallest building in New York City"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-203",
+    "message": [
+      {
+        "role": "user",
+        "content": "Where is the best spot to photograph the Statue of Liberty?"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-204",
+    "message": [
+      {
+        "role": "user",
+        "content": "is there any functionality that can provide some comfort for my aching muscles"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"You can turn on the seat massage feature for your comfort. Would you like me to do that?\"}"
+      },
+      {
+        "role": "user",
+        "content": "yes please"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Turn on seat massage\"}"
+      },
+      {
+        "role": "user",
+        "content": "passenger seat also wants it"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Turn on seat massage for the passenger seat\"}"
+      },
+      {
+        "role": "user",
+        "content": "suggest some pop singers for me "
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"How about listening to Taylor Swift or Ed Sheeran? They are popular pop singers with a wide range of songs.\"}"
+      },
+      {
+        "role": "user",
+        "content": "play the most famous piece from the first singer"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Play 'love story' by Taylor Swift\"}"
+      },
+      {
+        "role": "user",
+        "content": "what are some most famous attractions in SF"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-205",
+    "message": [
+      {
+        "role": "user",
+        "content": "When was Heron Tower built"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-206",
+    "message": [
+      {
+        "role": "user",
+        "content": "my back is hurting"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"Would you like me to turn on the seat massage for you?\"}"
+      },
+      {
+        "role": "user",
+        "content": "sounds reasonable"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Turn on seat massage for the driver's seat\"}"
+      },
+      {
+        "role": "user",
+        "content": "What is the most famous landmark in Rome"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-207",
+    "message": [
+      {
+        "role": "user",
+        "content": "The track was awesome let's stick with it"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-208",
+    "message": [
+      {
+        "role": "user",
+        "content": "The music order is getting boring."
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-209",
+    "message": [
+      {
+        "role": "user",
+        "content": "Can you set the music to repeat just this song?"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-210",
+    "message": [
+      {
+        "role": "user",
+        "content": "Let's change the way the songs are playing."
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-211",
+    "message": [
+      {
+        "role": "user",
+        "content": "Can we mix up the playlist?"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-212",
+    "message": [
+      {
+        "role": "user",
+        "content": "Set to repeat one."
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-213",
+    "message": [
+      {
+        "role": "user",
+        "content": "How about a different playback style?"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-214",
+    "message": [
+      {
+        "role": "user",
+        "content": "it is so boring listening to the same song all the time"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-215",
+    "message": [
+      {
+        "role": "user",
+        "content": "I want to Taylor Swifting all day long"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"play Taylor Swift songs\"}"
+      },
+      {
+        "role": "user",
+        "content": "play them all day long"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-216",
+    "message": [
+      {
+        "role": "user",
+        "content": "Change to shuffle mode."
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-217",
+    "message": [
+      {
+        "role": "user",
+        "content": "It's too dark in here!"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-218",
+    "message": [
+      {
+        "role": "user",
+        "content": "Let's get some more light in here for my reading, please."
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-219",
+    "message": [
+      {
+        "role": "user",
+        "content": "Could you turn on the front reading light for me?"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-220",
+    "message": [
+      {
+        "role": "user",
+        "content": "Can you please turn off all the reading lights?"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-221",
+    "message": [
+      {
+        "role": "user",
+        "content": "Hey, switch off the front reading light, please."
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-222",
+    "message": [
+      {
+        "role": "user",
+        "content": "I want to read in my car"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-223",
+    "message": [
+      {
+        "role": "user",
+        "content": "Can you turn on the back reading lights?"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-224",
+    "message": [
+      {
+        "role": "user",
+        "content": "Switch on the left reading light, please."
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-225",
+    "message": [
+      {
+        "role": "user",
+        "content": "A bit more light in the front seat would be nice."
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-226",
+    "message": [
+      {
+        "role": "user",
+        "content": "I can't see my notes properly, it's too dark inside."
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-227",
+    "message": [
+      {
+        "role": "user",
+        "content": "Can you make the display easier to see?"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-228",
+    "message": [
+      {
+        "role": "user",
+        "content": "I think the screen is too bright right now."
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-229",
+    "message": [
+      {
+        "role": "user",
+        "content": "Increase the screen brightness."
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-230",
+    "message": [
+      {
+        "role": "user",
+        "content": "This screen is too bright, turn it down!"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-231",
+    "message": [
+      {
+        "role": "user",
+        "content": "I can't see the screen very well."
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-232",
+    "message": [
+      {
+        "role": "user",
+        "content": "Can you dim the screen a bit?"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-233",
+    "message": [
+      {
+        "role": "user",
+        "content": "Switch to night mode, please."
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-234",
+    "message": [
+      {
+        "role": "user",
+        "content": "Why the screen is night mode during the day?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"It seems like the screen brightness might be set to night mode. Would you like me to adjust it to day mode for better visibility during the day?\"}"
+      },
+      {
+        "role": "user",
+        "content": "Yes."
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-235",
+    "message": [
+      {
+        "role": "user",
+        "content": "Make the screen brighter."
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-236",
+    "message": [
+      {
+        "role": "user",
+        "content": "Set the display to day mode now!"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-237",
+    "message": [
+      {
+        "role": "user",
+        "content": "The seat heating isn't quite warm enough"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-238",
+    "message": [
+      {
+        "role": "user",
+        "content": "what is the seat heating used for"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"Seat heating is used to warm up the seats, providing extra comfort during cold weather. It can be especially useful during winter or on chilly mornings.\"}"
+      },
+      {
+        "role": "user",
+        "content": "great, I need it now"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-239",
+    "message": [
+      {
+        "role": "user",
+        "content": "We're almost out of gas it's unnecessary to have the seat heating on in the vehicle"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-240",
+    "message": [
+      {
+        "role": "user",
+        "content": "the seat is like a preheated oven"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-241",
+    "message": [
+      {
+        "role": "user",
+        "content": "is there any device that can warm my hand?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"Yes, you can use the steering wheel heating feature in your car to warm your hands. Would you like me to turn it on for you?\"}"
+      },
+      {
+        "role": "user",
+        "content": "ok"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Turn on steering wheel heating\"}"
+      },
+      {
+        "role": "user",
+        "content": "what places in Berlin are good for night view"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"Berlin has many great spots for night views. Some popular ones include the Berlin TV Tower for panoramic city views, the East Side Gallery for a unique artistic experience, and the Brandenburg Gate, which is a symbol of unity and offers a stunning view of the city at night.\"}"
+      },
+      {
+        "role": "user",
+        "content": "what is the seat heating used for"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-242",
+    "message": [
+      {
+        "role": "user",
+        "content": "I'm in the mood for some music "
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"What kind of music would you like to listen to?\"}"
+      },
+      {
+        "role": "user",
+        "content": "play some jazz "
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Play jazz music\"}"
+      },
+      {
+        "role": "user",
+        "content": "the windshield is dirty "
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"Would you like me to turn on the wipers?\"}"
+      },
+      {
+        "role": "user",
+        "content": "yes "
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Turn on wipers\"}"
+      },
+      {
+        "role": "user",
+        "content": "I'm hungry"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"Would you like me to find a nearby restaurant?\"}"
+      },
+      {
+        "role": "user",
+        "content": "yes, please"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Navigate to nearby restaurant\"}"
+      },
+      {
+        "role": "user",
+        "content": "the car is getting too warm"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"Would you like me to decrease the temperature?\"}"
+      },
+      {
+        "role": "user",
+        "content": "yes, decrease it by 3 degrees"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Decrease temperature by 3 degrees\"}"
+      },
+      {
+        "role": "user",
+        "content": "turn off the seat heating too"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-243",
+    "message": [
+      {
+        "role": "user",
+        "content": "The overheated seat is making me uncomfortable"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-244",
+    "message": [
+      {
+        "role": "user",
+        "content": "The seats aren't warm enough yet"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-245",
+    "message": [
+      {
+        "role": "user",
+        "content": "The seat is too hot"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-246",
+    "message": [
+      {
+        "role": "user",
+        "content": "is there a device that can warm my seat"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"Yes, your car has seat heating functionality that can warm your seat. Would you like me to turn on the seat heating for you?\"}"
+      },
+      {
+        "role": "user",
+        "content": "ok"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-247",
+    "message": [
+      {
+        "role": "user",
+        "content": "After a long day it would be great to have a quick seat massage"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-248",
+    "message": [
+      {
+        "role": "user",
+        "content": "my legs are numb"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-249",
+    "message": [
+      {
+        "role": "user",
+        "content": "The massage function on the passenger seat is too gentle"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-250",
+    "message": [
+      {
+        "role": "user",
+        "content": "My butt hurts"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-251",
+    "message": [
+      {
+        "role": "user",
+        "content": "I would prefer if the massage wasn't as intense on my body"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-252",
+    "message": [
+      {
+        "role": "user",
+        "content": "my back is hurting"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"Would you like me to turn on the seat massage for you?\"}"
+      },
+      {
+        "role": "user",
+        "content": "sounds reasonable"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-253",
+    "message": [
+      {
+        "role": "user",
+        "content": "my back is sore"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-254",
+    "message": [
+      {
+        "role": "user",
+        "content": "is there any device that can provide some comfort for my aching shoulders"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-255",
+    "message": [
+      {
+        "role": "user",
+        "content": "is there any device that can provide some comfort for my aching shoulders"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"You can turn on the seat massage feature for your comfort. Would you like me to do that?\"}"
+      },
+      {
+        "role": "user",
+        "content": "why not"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-256",
+    "message": [
+      {
+        "role": "user",
+        "content": "is there any functionality that can provide some comfort for my aching muscles"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-257",
+    "message": [
+      {
+        "role": "user",
+        "content": "i need some fresh air from my side"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Open the driver's window\"}"
+      },
+      {
+        "role": "user",
+        "content": "the codriver also need it"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Open the codriver's window\"}"
+      },
+      {
+        "role": "user",
+        "content": "now close all of the windows"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Close all the car windows\"}"
+      },
+      {
+        "role": "user",
+        "content": " lower the temperature for me"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Decrease the temperature\"}"
+      },
+      {
+        "role": "user",
+        "content": "not enough, another 2 degrees"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Decrease the temperature by 2 degrees\"}"
+      },
+      {
+        "role": "user",
+        "content": "I'm sweating on my back, let's have some cool breeze."
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-258",
+    "message": [
+      {
+        "role": "user",
+        "content": "hi"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"Hello! How can I assist you today?\"}"
+      },
+      {
+        "role": "user",
+        "content": "I'm getting a bit sweaty in this car"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"Would you like me to decrease the temperature?\"}"
+      },
+      {
+        "role": "user",
+        "content": "yes"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"decrease temperature by 2 degrees\"}"
+      },
+      {
+        "role": "user",
+        "content": "How does seat ventilation work?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"Seat ventilation in your car works by circulating air through the seat vents. You can turn it on or off using the command 'turn on seat ventilation' or 'turn off seat ventilation'. This helps to keep the seats dry and comfortable, especially during hot or humid weather.\"}"
+      },
+      {
+        "role": "user",
+        "content": "ok, turn it on for me"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-259",
+    "message": [
+      {
+        "role": "user",
+        "content": "I'd prefer the passenger seat airflow to be not as fast"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-260",
+    "message": [
+      {
+        "role": "user",
+        "content": "Is there a way to blow the sweat away from the seat"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-261",
+    "message": [
+      {
+        "role": "user",
+        "content": "the seat is like a preheated oven"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"Would you like me to turn off the seat heating or decrease the level?\"}"
+      },
+      {
+        "role": "user",
+        "content": "i didn't turn on it"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"Would you like me to turn on the seat ventilation to cool it down?\"}"
+      },
+      {
+        "role": "user",
+        "content": "yes"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-262",
+    "message": [
+      {
+        "role": "user",
+        "content": "hi"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"Hello! How can I assist you today?\"}"
+      },
+      {
+        "role": "user",
+        "content": "I'm getting a bit sweaty in this car"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"Would you like me to decrease the temperature?\"}"
+      },
+      {
+        "role": "user",
+        "content": "yes"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"decrease temperature by 2 degrees\"}"
+      },
+      {
+        "role": "user",
+        "content": "How does seat ventilation work?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"Seat ventilation in your car works by circulating air through the seat vents. You can turn it on or off using the command 'turn on seat ventilation' or 'turn off seat ventilation'. This helps to keep the seats dry and comfortable, especially during hot or humid weather.\"}"
+      },
+      {
+        "role": "user",
+        "content": "ok, turn it on for me"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Turn on seat ventilation\"}"
+      },
+      {
+        "role": "user",
+        "content": "i cannot feel any breeze. it's too weak"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-263",
+    "message": [
+      {
+        "role": "user",
+        "content": "Can you use the seat ventilation to blow the sweat off the seat"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-264",
+    "message": [
+      {
+        "role": "user",
+        "content": " lower the temperature for me"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Decrease the temperature\"}"
+      },
+      {
+        "role": "user",
+        "content": "not enough, another 2 degrees"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Decrease the temperature by 2 degrees\"}"
+      },
+      {
+        "role": "user",
+        "content": "I'm sweating on my back, let's have some cool breeze."
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-265",
+    "message": [
+      {
+        "role": "user",
+        "content": "I'm feeling too hot"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"Would you like me to lower the temperature or turn on the Max AC?\"}"
+      },
+      {
+        "role": "user",
+        "content": "yes, lower the temperature"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Decrease temperature by 3 degrees\"}"
+      },
+      {
+        "role": "user",
+        "content": "can you also cool my seat"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-266",
+    "message": [
+      {
+        "role": "user",
+        "content": "the seat is like a preheated oven"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"Would you like me to turn off the seat heating or decrease the level?\"}"
+      },
+      {
+        "role": "user",
+        "content": "i didn't turn on it"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-267",
+    "message": [
+      {
+        "role": "user",
+        "content": "I'd love to hear some songs by the British Soul Queen"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-268",
+    "message": [
+      {
+        "role": "user",
+        "content": "I can't stop thinking about the song I heard earlier I have to listen to it again"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-269",
+    "message": [
+      {
+        "role": "user",
+        "content": "is there any functionality that can provide some comfort for my aching muscles"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"You can turn on the seat massage feature for your comfort. Would you like me to do that?\"}"
+      },
+      {
+        "role": "user",
+        "content": "yes please"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Turn on seat massage\"}"
+      },
+      {
+        "role": "user",
+        "content": "my wife in the passenger seat also wants it"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Turn on seat massage for the passenger seat\"}"
+      },
+      {
+        "role": "user",
+        "content": "suggest some pop singers for me "
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"How about listening to Taylor Swift or Ed Sheeran? They are popular pop singers with a wide range of songs.\"}"
+      },
+      {
+        "role": "user",
+        "content": "play the most famous piece from the first singer"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-270",
+    "message": [
+      {
+        "role": "user",
+        "content": "Can you play the famous song about the earth from Michael Jackson"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-271",
+    "message": [
+      {
+        "role": "user",
+        "content": "I'm a big fan of the Prince of Pop and his music"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-272",
+    "message": [
+      {
+        "role": "user",
+        "content": "let's Beatles on the road trip"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-273",
+    "message": [
+      {
+        "role": "user",
+        "content": "I'd love to hear some of the legendary King of Rock and Roll's famous hits such as Heartbreak Hotel"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-274",
+    "message": [
+      {
+        "role": "user",
+        "content": "Play the song that most Americans would listen to when Christmas is coming"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-275",
+    "message": [
+      {
+        "role": "user",
+        "content": "Which album did Taylor Swift created during the COVID-19 lockdown play it for me"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-276",
+    "message": [
+      {
+        "role": "user",
+        "content": "Let's groove to the rhythm of the Country Pop Princess"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-277",
+    "message": [
+      {
+        "role": "user",
+        "content": "my hand is freezing"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"Would you like me to turn on steering wheel heating?\"}"
+      },
+      {
+        "role": "user",
+        "content": "make it warm faster"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-278",
+    "message": [
+      {
+        "role": "user",
+        "content": "what is the steering wheel heating used for"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"Steering wheel heating is used to warm up the steering wheel, making it more comfortable to hold, especially during colder weather. It can help reduce the grip needed to hold the wheel, which can be beneficial in icy conditions.\"}"
+      },
+      {
+        "role": "user",
+        "content": "will my hand get burned"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"No, the steering wheel heating is designed to warm the wheel without causing burns.\"}"
+      },
+      {
+        "role": "user",
+        "content": "ok. why not have a try"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-279",
+    "message": [
+      {
+        "role": "user",
+        "content": "the wheel is so cold to touch"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-280",
+    "message": [
+      {
+        "role": "user",
+        "content": "my hands are cold"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"Would you like me to turn on the steering wheel heating for you?\"}"
+      },
+      {
+        "role": "user",
+        "content": "yes, turn it on"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Turn on steering wheel heating\"}"
+      },
+      {
+        "role": "user",
+        "content": "can you increase the intensity"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-281",
+    "message": [
+      {
+        "role": "user",
+        "content": "I'm in a rush to drive but the steering wheel isn't warm enough yet"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-282",
+    "message": [
+      {
+        "role": "user",
+        "content": "what is the steering wheel heating used for"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"Steering wheel heating is used to warm up the steering wheel, making it more comfortable to hold, especially during colder weather. It can help reduce the grip needed to hold the wheel, which can be beneficial in icy conditions.\"}"
+      },
+      {
+        "role": "user",
+        "content": "will my hand get burned"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"No, the steering wheel heating is designed to warm the wheel without causing burns.\"}"
+      },
+      {
+        "role": "user",
+        "content": "ok. why not have a try"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Turn on steering wheel heating\"}"
+      },
+      {
+        "role": "user",
+        "content": "make it warmer"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-283",
+    "message": [
+      {
+        "role": "user",
+        "content": "i feel my hand is so cold"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-284",
+    "message": [
+      {
+        "role": "user",
+        "content": "the wheel is so cold"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"Would you like me to turn on the steering wheel heating?\"}"
+      },
+      {
+        "role": "user",
+        "content": "yes"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-285",
+    "message": [
+      {
+        "role": "user",
+        "content": "my hands are cold"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-286",
+    "message": [
+      {
+        "role": "user",
+        "content": "Is there any function to provide me with a warm steering wheel"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-287",
+    "message": [
+      {
+        "role": "user",
+        "content": "Time to hit the highway don't forget to close the roof window as well"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-288",
+    "message": [
+      {
+        "role": "user",
+        "content": "It would be amazing to look at the stars from the sunroof"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-289",
+    "message": [
+      {
+        "role": "user",
+        "content": "what is the sunroof used for"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"The sunroof is used to let in natural light and fresh air into the car. It can make the interior feel more open and airy, and it's especially nice on pleasant days when you want to enjoy the weather.\"}"
+      },
+      {
+        "role": "user",
+        "content": "make it slightly open"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-290",
+    "message": [
+      {
+        "role": "user",
+        "content": "Rain's coming in through the top window Hurry shut it"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-291",
+    "message": [
+      {
+        "role": "user",
+        "content": "I'm getting too much sunlight, my skin hurts"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-292",
+    "message": [
+      {
+        "role": "user",
+        "content": "we're about to get on the highway don't forget to close the roof windows"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-293",
+    "message": [
+      {
+        "role": "user",
+        "content": "I want more sunshine"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-294",
+    "message": [
+      {
+        "role": "user",
+        "content": "I'm getting too much sunlight, my skin hurts."
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-295",
+    "message": [
+      {
+        "role": "user",
+        "content": "I want to see the moon"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-296",
+    "message": [
+      {
+        "role": "user",
+        "content": "what is the sunroof used for"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"The sunroof is used to let in natural light and fresh air into the car. It can make the interior feel more open and airy, and it's especially nice on pleasant days when you want to enjoy the weather.\"}"
+      },
+      {
+        "role": "user",
+        "content": "make it half open"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-297",
+    "message": [
+      {
+        "role": "user",
+        "content": "Why is the sunshade still closed?"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-298",
+    "message": [
+      {
+        "role": "user",
+        "content": "Can you adjust the sunshade a bit?"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-299",
+    "message": [
+      {
+        "role": "user",
+        "content": "Hey, let's close the sunroof sunshade for now."
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-300",
+    "message": [
+      {
+        "role": "user",
+        "content": "Can you open the sunroof sunshade a bit?"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-301",
+    "message": [
+      {
+        "role": "user",
+        "content": "Could you close the sunroof sunshade, please?"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-302",
+    "message": [
+      {
+        "role": "user",
+        "content": "turn on the fog lights"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Turn on fog lights\"}"
+      },
+      {
+        "role": "user",
+        "content": "close the sunshade"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-303",
+    "message": [
+      {
+        "role": "user",
+        "content": "Shut the sunroof sunshade now!"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-304",
+    "message": [
+      {
+        "role": "user",
+        "content": "Could you open the sunshade a little?"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-305",
+    "message": [
+      {
+        "role": "user",
+        "content": "Open the sunroof sunshade halfway"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-306",
+    "message": [
+      {
+        "role": "user",
+        "content": "The curtain is obstructing the view of the beautiful sunset"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-307",
+    "message": [
+      {
+        "role": "user",
+        "content": "i feel extremely cold, increase the temperature"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-308",
+    "message": [
+      {
+        "role": "user",
+        "content": "i feel so cold in car"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\":\"Would you like me to increase the temperature or turn on the seat heating?\"}"
+      },
+      {
+        "role": "user",
+        "content": "increase it by 2"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-309",
+    "message": [
+      {
+        "role": "user",
+        "content": "I 'm taking a nap, help me adjust the temperature in car."
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\":\"Sure.  Would you like the temperature to be cooler or warmer? \"}"
+      },
+      {
+        "role": "user",
+        "content": "warmer"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-310",
+    "message": [
+      {
+        "role": "user",
+        "content": "Can we adjust the temperature so that it's not too hot"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-311",
+    "message": [
+      {
+        "role": "user",
+        "content": "I'm in the mood for some music "
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"What kind of music would you like to listen to?\"}"
+      },
+      {
+        "role": "user",
+        "content": "play some jazz "
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Play jazz music\"}"
+      },
+      {
+        "role": "user",
+        "content": "the windshield is dirty "
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"Would you like me to turn on the wipers?\"}"
+      },
+      {
+        "role": "user",
+        "content": "yes "
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Turn on wipers\"}"
+      },
+      {
+        "role": "user",
+        "content": "I'm hungry"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"Would you like me to find a nearby restaurant?\"}"
+      },
+      {
+        "role": "user",
+        "content": "yes, please"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Navigate to nearby restaurant\"}"
+      },
+      {
+        "role": "user",
+        "content": "the car is getting too warm"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"Would you like me to decrease the temperature?\"}"
+      },
+      {
+        "role": "user",
+        "content": "yes, decrease it by 3 degrees"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-312",
+    "message": [
+      {
+        "role": "user",
+        "content": "I'm feeling a bit cold."
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-313",
+    "message": [
+      {
+        "role": "user",
+        "content": "The temperature inside the car is making me feel sick"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-314",
+    "message": [
+      {
+        "role": "user",
+        "content": "I'm cold"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-315",
+    "message": [
+      {
+        "role": "user",
+        "content": "i need some cold drink for this hot summer"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"Would you like me to find the nearest convenience store for you?\"}"
+      },
+      {
+        "role": "user",
+        "content": "a cafe would be nice"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Navigate to the nearest cafe\"}"
+      },
+      {
+        "role": "user",
+        "content": "can you make the car cooler"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Decrease the temperature\"}"
+      },
+      {
+        "role": "user",
+        "content": "decrease 2 degrees more"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-316",
+    "message": [
+      {
+        "role": "user",
+        "content": "i feel extremely hot, lower the temperature"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-317",
+    "message": [
+      {
+        "role": "user",
+        "content": "plan a one day trip for me to visit beijing"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-318",
+    "message": [
+      {
+        "role": "user",
+        "content": "show some tour plan suggestions for a one day trip in New York City"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-319",
+    "message": [
+      {
+        "role": "user",
+        "content": "I'm planning a trip in Los Angeles so I'm curious about the top attractions to visit"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-320",
+    "message": [
+      {
+        "role": "user",
+        "content": "Any fun places in LA"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-321",
+    "message": [
+      {
+        "role": "user",
+        "content": "Any fun places in Tokyo"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-322",
+    "message": [
+      {
+        "role": "user",
+        "content": "i feel tired after work"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"It sounds like you could use some relaxation. Would you like me to turn on the seat massage for you?\"}"
+      },
+      {
+        "role": "user",
+        "content": " yes, please"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Turn on seat massage for the driver's seat\"}"
+      },
+      {
+        "role": "user",
+        "content": "can i have some jazz"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Play jazz music\"}"
+      },
+      {
+        "role": "user",
+        "content": "it's too hot in here, can you make it cooler?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Decrease temperature\"}"
+      },
+      {
+        "role": "user",
+        "content": "recommend me some places in paris"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-323",
+    "message": [
+      {
+        "role": "user",
+        "content": "show some tour plan suggestions for a one day trip in LA"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-324",
+    "message": [
+      {
+        "role": "user",
+        "content": "what can I do in london for just one day stay"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-325",
+    "message": [
+      {
+        "role": "user",
+        "content": "What can I visit in Los Angeles if I only have one choice"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-326",
+    "message": [
+      {
+        "role": "user",
+        "content": "it's a rainy day, isn't it"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"Yes, it is quite rainy today! Would you like me to turn on the windshield wipers?\"}"
+      },
+      {
+        "role": "user",
+        "content": "the windshield wipers"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Turn on the windshield wipers\"}"
+      },
+      {
+        "role": "user",
+        "content": "will it be sunny tomorrow"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Check the weather forecast for tomorrow\"}"
+      },
+      {
+        "role": "user",
+        "content": "plan out a one-day adventure in New York"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-327",
+    "message": [
+      {
+        "role": "user",
+        "content": "Close the trunk now!"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-328",
+    "message": [
+      {
+        "role": "user",
+        "content": "I can't reach the trunk can you come and close it for me"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-329",
+    "message": [
+      {
+        "role": "user",
+        "content": "I'm going to put my big big bags in the back"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-330",
+    "message": [
+      {
+        "role": "user",
+        "content": "Close the trunk."
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-331",
+    "message": [
+      {
+        "role": "user",
+        "content": "I need to access the front trunk, please."
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-332",
+    "message": [
+      {
+        "role": "user",
+        "content": "Why is the rear trunk still closed?"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-333",
+    "message": [
+      {
+        "role": "user",
+        "content": "The trunk is beyond my reach can you please come and close it"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-334",
+    "message": [
+      {
+        "role": "user",
+        "content": "Could you help me out I'm unable to open the trunk myself"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-335",
+    "message": [
+      {
+        "role": "user",
+        "content": "Can you close the front trunk for me?"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-336",
+    "message": [
+      {
+        "role": "user",
+        "content": "Could you close the front trunk now?"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-337",
+    "message": [
+      {
+        "role": "user",
+        "content": "The sound is as faint as a distant echo"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-338",
+    "message": [
+      {
+        "role": "user",
+        "content": "can you turn on the music?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Play music\"}"
+      },
+      {
+        "role": "user",
+        "content": "a bit louder, please"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-339",
+    "message": [
+      {
+        "role": "user",
+        "content": "It's too loud"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"Would you like me to lower the volume of the music for you?\"}"
+      },
+      {
+        "role": "user",
+        "content": "ok"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-340",
+    "message": [
+      {
+        "role": "user",
+        "content": "the music is too noisy"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"Would you like me to lower the music volume or turn it off?\"}"
+      },
+      {
+        "role": "user",
+        "content": "lower the volume"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-341",
+    "message": [
+      {
+        "role": "user",
+        "content": "It's too loud"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"Would you like me to lower the volume of the music for you?\"}"
+      },
+      {
+        "role": "user",
+        "content": "ok"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"decrease volume\"}"
+      },
+      {
+        "role": "user",
+        "content": "still loud"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-342",
+    "message": [
+      {
+        "role": "user",
+        "content": "This volume is not my usual preference I prefer it set at 3"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-343",
+    "message": [
+      {
+        "role": "user",
+        "content": "This sound is blasting my eardrums"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-344",
+    "message": [
+      {
+        "role": "user",
+        "content": "I can't make out the audio it's too soft to hear"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-345",
+    "message": [
+      {
+        "role": "user",
+        "content": "I'm feeling a bit cold."
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"Would you like me to increase the temperature in car?\"}"
+      },
+      {
+        "role": "user",
+        "content": "yes, please"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Increase temperature by 2 degrees\"}"
+      },
+      {
+        "role": "user",
+        "content": "Make the seat warmer."
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"Would you like me to activate seat heating for you?\"}"
+      },
+      {
+        "role": "user",
+        "content": "What are some famous beaches in California?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"Some famous beaches in California include Venice Beach, known for its vibrant boardwalk and Muscle Beach; Santa Monica Beach, which features an iconic pier with an amusement park; Malibu's Zuma Beach, popular for its wide sandy shores; and Laguna Beach, renowned for its scenic beauty and art festivals. Each offers unique experiences and stunning coastal views.\"}"
+      },
+      {
+        "role": "user",
+        "content": "Can we listen to some jazz?"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Play jazz music\"}"
+      },
+      {
+        "role": "user",
+        "content": "Turn down the volume a bit."
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-346",
+    "message": [
+      {
+        "role": "user",
+        "content": "I'm going deaf"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-347",
+    "message": [
+      {
+        "role": "user",
+        "content": "I will stay in Paris next week but i don't know the weather there"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-348",
+    "message": [
+      {
+        "role": "user",
+        "content": "what should i wear for my tomorrow's trip to London"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"I can check the weather for London to help you decide what to wear. Would you like me to do that?\"}"
+      },
+      {
+        "role": "user",
+        "content": "yes, do it for me"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-349",
+    "message": [
+      {
+        "role": "user",
+        "content": "what's the weather like in beijing"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-350",
+    "message": [
+      {
+        "role": "user",
+        "content": "what's the weather like in beijing"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Check the weather for Beijing\"}"
+      },
+      {
+        "role": "user",
+        "content": "what about tomorrow"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-351",
+    "message": [
+      {
+        "role": "user",
+        "content": "check the weather for my trip to LA tomorrow"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-352",
+    "message": [
+      {
+        "role": "user",
+        "content": "what should i wear for my tomorrow's trip to London"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-353",
+    "message": [
+      {
+        "role": "user",
+        "content": "I will stay in Paris next week but i don't know the weather there"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"I can check the weather for Paris next week. Would you like me to do that?\"}"
+      },
+      {
+        "role": "user",
+        "content": "ok"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-354",
+    "message": [
+      {
+        "role": "user",
+        "content": "check the weather for my trip to LA"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Check the weather for Los Angeles\"}"
+      },
+      {
+        "role": "user",
+        "content": "what about Seattle"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-355",
+    "message": [
+      {
+        "role": "user",
+        "content": "what's the weather like today"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-356",
+    "message": [
+      {
+        "role": "user",
+        "content": "what's the weather like today"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-357",
+    "message": [
+      {
+        "role": "user",
+        "content": "clear off the dirty water from the rear windshield"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-358",
+    "message": [
+      {
+        "role": "user",
+        "content": "The water on the windshield is obstructing my view"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-359",
+    "message": [
+      {
+        "role": "user",
+        "content": "Can you remove the water droplets from the windshield"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-360",
+    "message": [
+      {
+        "role": "user",
+        "content": "I can't see clearly because of the rainwater on the windshield"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-361",
+    "message": [
+      {
+        "role": "user",
+        "content": "it's a rainy day, isn't it"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"Yes, it is quite rainy today! Would you like me to turn on the windshield wipers?\"}"
+      },
+      {
+        "role": "user",
+        "content": "the windshield wipers"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-362",
+    "message": [
+      {
+        "role": "user",
+        "content": "The windshield needs to be cleaned of the dirty water"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-363",
+    "message": [
+      {
+        "role": "user",
+        "content": "the windscreen is so dirty"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-364",
+    "message": [
+      {
+        "role": "user",
+        "content": "my hands are cold"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"reply\": \"Would you like me to turn on the steering wheel heating for you?\"}"
+      },
+      {
+        "role": "user",
+        "content": "yes, turn it on"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Turn on steering wheel heating\"}"
+      },
+      {
+        "role": "user",
+        "content": "can you increase the intensity"
+      },
+      {
+        "role": "assistant",
+        "content": "{\"command\": \"Increase steering wheel heating intensity\"}"
+      },
+      {
+        "role": "user",
+        "content": "I can't see clearly through the windshield because of the rain drops"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-365",
+    "message": [
+      {
+        "role": "user",
+        "content": "The windshield is covered in dirty water wipe it off"
+      }
+    ]
+  },
+  {
+    "id": "evl-normal-366",
+    "message": [
+      {
+        "role": "user",
+        "content": "The windshield wipers are so annoying I'd rather not use them"
+      }
+    ]
+  }
+]

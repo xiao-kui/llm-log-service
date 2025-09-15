@@ -3,6 +3,7 @@
 # @Author  : kui.xiao
 # @Description : 每天存储一个 tinydb，文件名格式为 YYYY-MM-DD.json，所有 search 方法会查遍所有 db
 """
+import os
 
 from streamlit.testing.v1.element_tree import ChatMessage
 from tinydb import TinyDB, where
@@ -20,6 +21,8 @@ class ChatMessageTinyDb:
         if base_dir:
             self.base_dir = Path(base_dir)
             self.base_dir.mkdir(parents=True, exist_ok=True)
+            for file in self.base_dir.rglob("*.json"):
+                self.dbs[file.stem] = TinyDB(str(file))
 
     def _switch_db(self, now: datetime):
         """切换到对应日期的 tinydb 文件"""

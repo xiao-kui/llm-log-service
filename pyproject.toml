@@ -6,6 +6,8 @@ requires-python = ">=3.13"
 dependencies = [
     "fastapi>=0.116.1",
     "httpx>=0.28.1",
+    "langchain-core>=0.3.76",
+    "langchain-openai>=0.3.33",
     "loguru>=0.7.3",
     "streamlit>=1.49.0",
     "tinydb>=4.8.2",

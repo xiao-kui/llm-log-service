@@ -63,9 +63,9 @@ def render_sidebar_time_query():
 
 
 def render_sidebar_id_query():
-    with st.sidebar.expander("🆔 Search by ID", expanded=False):
-        message_id = st.text_input("Enter Message ID", key="id_input")
-        if st.button("Search", key="query_id"):
+    with st.sidebar.expander("🆔 Search by UUID", expanded=False):
+        message_id = st.text_input("Enter Message UUID", key="uuid_input")
+        if st.button("Search", key="search_by_uuid"):
             if message_id:
                 st.session_state["query_result"] = fetch_message_by_uuid(message_id)
             else:
