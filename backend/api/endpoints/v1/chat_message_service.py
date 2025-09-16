@@ -19,7 +19,7 @@ async def handle_store_chat_message(request: Request):
     try:
         body = await request.json()
         chat_message_store = ChatMessageStore(**body)
-        chat_message_tinydb.insert(chat_message_store.model_dump())
+        chat_message_tinydb.insert(chat_message_store.model_dump(exclude_defaults=True))
     except Exception as e:
         logger.error(f"request error: {e}")
 

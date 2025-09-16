@@ -30,7 +30,8 @@ class ChatMessageStore(BaseModel):
         if isinstance(values, dict):
             known_fields = set(cls.model_fields.keys())
             extra = {k: v for k, v in values.items() if k not in known_fields}
-            values["additional_kwargs"] = extra
+            # if extra:
+            #     values["additional_kwargs"] = extra
         return values
 
 class TimeUnitType(str, Enum):
