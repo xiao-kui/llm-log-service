@@ -19,7 +19,7 @@ async def handle_store_chat_message(request: Request):
     try:
         body = await request.json()
         chat_message_store = ChatMessageStore(**body)
-        chat_message_tinydb.insert(chat_message_store.model_dump())
+        chat_message_tinydb.insert(chat_message_store.model_dump(exclude_unset=True))
     except Exception as e:
         logger.error(f"request error: {e}")
 
@@ -29,7 +29,7 @@ def handle_search_chat_message(request: ChatMessageFilter):
         results = []
         db = chat_message_tinydb
         for ele in request.operator:
-            if ele == FilterType.Uuid:
+            if ele == FilterType.Id:
                 results = db.search_by_id(request.uuid)
             if ele == FilterType.Time:
                 results = db.search_by_time(request.start_time, request.end_time)
@@ -37,6 +37,8 @@ def handle_search_chat_message(request: ChatMessageFilter):
                 results = db.search_latest_n(request.latest_n)
             if ele == FilterType.Content:
                 results = db.search_by_content(request.content)
+            if ele == FilterType.Criteria:
+                results = db.search_by_criteria(request.latest_n, request.device_name, request.model_name)
             db = ChatMessageTinyDb().init_from_list("temp", results)
 
         return results

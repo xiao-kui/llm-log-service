@@ -12,14 +12,16 @@ from datetime import datetime
 
 class ChatMessageStore(BaseModel):
     user: str = None
-    uuid: str = None
+    id: str = None
     group_id: str = None
     finish_reason: str = None
     time_to_first_token:str = None
     time_to_last_token:str = None
     time_per_output_token: str = None
     tokens_per_second:str = None
-    token_count: int = 0
+    token_size: int = 0
+    device_name: str = None
+    model_name: str = None
     messages: list = Field(default_factory=list)
     additional_kwargs: dict = Field(default_factory=dict)
 
@@ -42,18 +44,21 @@ class TimeUnitType(str, Enum):
     Years = "Years"
 
 class FilterType(str, Enum):
-    Uuid = "Uuid"
+    Id = "Id"
     Time = "Time"
     LatestN = "LatestN"
     Content = "Content"
-
-class LatestN(BaseModel):
-    count: int
+    DeviceName = "DeviceName"
+    ModelName = "ModelName"
+    Criteria = "Criteria"
 
 class ChatMessageFilter(BaseModel):
     operator: list[FilterType] = Field(default_factory=list)
-    uuid: Optional[str] = None
+    id: Optional[str] = None
     start_time: Optional[datetime]= None
     end_time: Optional[datetime]= None
-    latest_n: Optional[LatestN]= None
+    latest_n: Optional[int]= None
     content: Optional[str]= None
+    device_name: Optional[str]= None
+    model_name: Optional[str]= None
+
