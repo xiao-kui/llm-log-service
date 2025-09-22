@@ -14,6 +14,11 @@ from backend.schemas.chat_message import FilterType
 
 API_BASE_URL = "http://127.0.0.1:9015/api/v1/log/search/chat_message"
 
+
+if "initialized" not in st.session_state:
+    st.session_state.clear()
+    st.session_state["initialized"] = True
+
 def fetch_messages_by_time(start: datetime, end: datetime) -> List[Dict]:
     payload = ChatMessageFilter(operator=[FilterType.Time],start_time=start, end_time=end).model_dump_json()
     resp = httpx.post(API_BASE_URL, content=payload, headers={"Content-Type": "application/json"})
@@ -102,7 +107,7 @@ def render_sidebar_criteria_query():
     with st.sidebar.expander("⚙️ Search By Condition", expanded=False):
         latest_n = st.number_input("latest_n", value=50)
         device_name = st.text_input("device_name", value="8295")
-        model_name = st.text_input("model_name")
+        model_name = st.text_input("model_name", value="llama3-w4-3b")
         if st.button("Search", key="query_by_conditions"):
             msgs = fetch_messages_by_criteria(latest_n, device_name, model_name)
             st.session_state["query_result"] = msgs if msgs else [{"info": "No messages found"}]
