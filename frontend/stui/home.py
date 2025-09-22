@@ -12,12 +12,11 @@ from backend.schemas.chat_message import ChatMessageFilter
 from typing import List, Dict
 from backend.schemas.chat_message import FilterType
 
+import random
+import string
+
 API_BASE_URL = "http://127.0.0.1:9015/api/v1/log/search/chat_message"
 
-
-if "initialized" not in st.session_state:
-    st.session_state.clear()
-    st.session_state["initialized"] = True
 
 def fetch_messages_by_time(start: datetime, end: datetime) -> List[Dict]:
     payload = ChatMessageFilter(operator=[FilterType.Time],start_time=start, end_time=end).model_dump_json()
@@ -103,14 +102,22 @@ def render_sidebar_content_query():
             msgs = fetch_messages_by_content(count)
             st.session_state["query_result"] = msgs if msgs else [{"info": "No messages found"}]
 
+
 def render_sidebar_criteria_query():
-    with st.sidebar.expander("⚙️ Search By Condition", expanded=False):
-        latest_n = st.number_input("latest_n", value=50)
-        device_name = st.text_input("device_name", value="8295")
-        model_name = st.text_input("model_name", value="llama3-w4-3b")
-        if st.button("Search", key="query_by_conditions"):
+    with st.sidebar.expander("⚙️ Search By Condition", expanded=True):
+        latest_n = st.number_input("latest_n", value=50, key="criteria_query_latest_n")
+        device_name = st.text_input("device_name", value="8295", key="criteria_query_device_name")
+        model_name = st.text_input("model_name", value="llama3-w4-3b", key="criteria_query_model_name")
+        if st.button("Search", key="criteria_search"):
             msgs = fetch_messages_by_criteria(latest_n, device_name, model_name)
-            st.session_state["query_result"] = msgs if msgs else [{"info": "No messages found"}]
+
+            if not msgs:
+                msgs = [{"info": "No messages found"}]
+
+            for msg in msgs:
+                msg["random_id"] = ''.join(random.choices(string.ascii_letters + string.digits, k=8))
+
+            st.session_state["query_result"] = msgs
 
 def render_query_results():
     if "query_result" in st.session_state:
@@ -118,7 +125,6 @@ def render_query_results():
 
 def main():
     st.title("📑 Chat Message Viewer")
-
     render_sidebar_time_query()
     render_sidebar_id_query()
     render_sidebar_latest_query()
