@@ -100,15 +100,33 @@ class ChatMessageTinyDb:
                     break
         return results
 
-    def search_by_criteria(self, latest_n:int, device_name: str, model_name: Optional[str] = None) -> list[dict]:
-        results = []
-        for db in self.dbs.values():
+    def search_by_criteria(
+        self,
+        latest_n: int,
+        device_name: Optional[str] = None,
+        model_name: Optional[str] = None
+    ) -> list[dict]:
+        query = None
+
+        if device_name:
             query = where("device_name") == device_name
-            if model_name:
+
+        if model_name:
+            if query:
                 query = query & (where("model_name") == model_name)
-            results.extend(db.search(query))  # type: ignore
-        results.sort(key=lambda x: x.get("datetime", 0), reverse=True)
-        return results[:latest_n]
+            else:
+                query = where("model_name") == model_name
+
+        results = []
+        if query:
+            for db in self.dbs.values():
+                results.extend(db.search(query))  # type: ignore
+
+            results.sort(key=lambda x: x.get("datetime", 0), reverse=True)
+            return results[:latest_n]
+        else:
+            # 没有任何过滤条件 → 返回最新 N 条
+            return self.search_latest_n(latest_n)
 
 
 base_path = Path(__file__).parent.parent / "resources/tinydb"
